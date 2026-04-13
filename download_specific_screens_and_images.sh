@@ -1,0 +1,25 @@
+#!/bin/bash
+mkdir -p screens_assets
+cd screens_assets
+
+echo "Downloading Giới thiệu (Updated FAQ)..."
+curl -sSL -o "Gioi_thieu_Updated_FAQ.html" "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY0ZjE1ODgxYzZhY2MwMjJkNmNmNTZmMWEyZjg2EgsSBxCw6cL9mAYYAZIBIwoKcHJvamVjdF9pZBIVQhMzODQwOTU5NDY3OTE5Njk4ODY0&filename=&opi=89354086"
+curl -sSL -o "Gioi_thieu_Updated_FAQ.webp" "https://lh3.googleusercontent.com/aida/ADBb0ugXbH-6IuoMoSyz0VSVqeGO_TAXltFT0_Mk9o_E2gm8OxBz_oCDZ7Xe0Bfa8h63BeqoWs47-IKXhhH0zQeHrfCQBf9WuF2p9l0clNhGhmdy-Kfs7OgfyZZIQ1KJDLncyTLeJQFD6zo16dC0Fv2a6ZZ1JpJH2_N-MQ8U7zfBRMYu2ut0H6nf-9kx4b79vAtI2EBUn5a3VLn15E1dkdPVPDQn04QlkZ-DlT22LCZIgkP8CBaKFiqsGK4aOw"
+
+echo "Downloading Thông tin khác..."
+curl -sSL -o "Thong_tin_khac.html" "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY0ZjE1ODhiOWM0ZTEwNzc5YTYwMTI3MDViODIwEgsSBxCw6cL9mAYYAZIBIwoKcHJvamVjdF9pZBIVQhMzODQwOTU5NDY3OTE5Njk4ODY0&filename=&opi=89354086"
+curl -sSL -o "Thong_tin_khac.webp" "https://lh3.googleusercontent.com/aida/ADBb0ugXTNvekKCbv-5NDUfCP0a6mq4TK-CflGjRbMkD-1Zb4OEhQ59gYgFZ3nHgHJbBG5OrURpDfNZUh5nENuQOfEMkeWlq974SuYrbobQYi_0qE7ePrmOH0ed5A6fAujHloXRKwypzBaY5exrh-cXUN19-rbceQgMkdZUDYyKdbZjfsIGvYFqkyNbp_-I03ry1S9uA03zuFJ_vQ1s3f-nf4KvO-2T55Os4erAwRqSiXu_giFlFUJDpFRa9Pzc"
+
+echo "Downloading Đối tác..."
+curl -sSL -o "Doi_tac.html" "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY0ZjE1ODhkODAzNGMwMzMyZjhkYzdiMmI3OTJhEgsSBxCw6cL9mAYYAZIBIwoKcHJvamVjdF9pZBIVQhMzODQwOTU5NDY3OTE5Njk4ODY0&filename=&opi=89354086"
+curl -sSL -o "Doi_tac.webp" "https://lh3.googleusercontent.com/aida/ADBb0ujtRqSLi9gerGfnwGIlKeEvMlba7NgkdKD5XI-oibQfnTo44LkhdIhGYKBTwg24AB8I-OAxJFz0FKk0x6u983DUMw47p2plrG3Fotveq2no2n-i-WdXAvhJR-_39fi-5MGWdxrfFjyyZIkZX2ugP7DkfcdLKkfAA0RZYCE7TvX-xeKBwxCeD-lNnNyIsoWdRAtvTU8sk_SIkhegXzqsF8IpL6HF54YWY_Kmv_NOJYgXdPnMCquf9SpdoOc"
+
+echo "Downloading Giải pháp (Cuộn tự động)..."
+curl -sSL -o "Giai_phap_Cuon_tu_dong.html" "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzkyMDcyNDlkOWNkODQ0MGRiOGM4YmE2ZGIwNmY5MzE4EgsSBxCw6cL9mAYYAZIBIwoKcHJvamVjdF9pZBIVQhMzODQwOTU5NDY3OTE5Njk4ODY0&filename=&opi=89354086"
+curl -sSL -o "Giai_phap_Cuon_tu_dong.webp" "https://lh3.googleusercontent.com/aida/ADBb0ujSXOgXrRTzElgIV_viL_tIBYxHjA7Zqdr7SZ95AxVqfKoh2Uc-N8_KiVPHP3O5PGGpjtmIY3rmZXpVKI4YjlCsoFm06oY9rgUpDb6T-QnXdMnePYR8dsY9gVxyZuFOccCjjxBY-MuONeRqWd56lXSD7A_PyYN7zR-I_EB6agBCLt9ySnqyeb0xhGoxjV4JOvobTfXSLTOO1ijrcCkkn6GuseE9ia8QDz_bNUpDBgLrqUmX4s0tbS5cyuY"
+
+echo "Downloading Liên hệ (Cập nhật Form)..."
+curl -sSL -o "Lien_he_Cap_nhat_Form.html" "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzlmZjU4NjhiM2ZkZjRkODNhM2M3YTc5YzZmZTZiZjAwEgsSBxCw6cL9mAYYAZIBIwoKcHJvamVjdF9pZBIVQhMzODQwOTU5NDY3OTE5Njk4ODY0&filename=&opi=89354086"
+curl -sSL -o "Lien_he_Cap_nhat_Form.webp" "https://lh3.googleusercontent.com/aida/ADBb0uiPlG54epiHHoLWxvgzwhDq-dfk6-VP1NY04zK9cUscffKQuoImXtMnGRdNsRw1vqFJxfXR-4pMIfUGGfXf9g0MHDddNmURBobB69RQTyH3j4QwJ_Sv8hu8rnS3Oy_qM1cXFaT6Jh9Jc0dNSAbSO0yzdj9-CRXaC-2XRhBSGd54xxovVtOomToYTzFKNbl-4YQn2gEKXwLh-u9d3RJyVi3ePB_z_pf9eu-aRUQBITsQ1L1mxQa08puxz_s"
+
+echo "Done downloading screens and images."
