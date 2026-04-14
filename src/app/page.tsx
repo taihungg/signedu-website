@@ -1,4 +1,5 @@
 import FaqAccordion from "@/components/FaqAccordion";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -30,16 +31,22 @@ export default function Home() {
             <h1 className="font-headline font-extrabold text-[50px] md:text-[40px] leading-[1.15] text-on-surface">
               VÌ MỘT VIỆT NAM <br />HOÀ NHẬP KHÔNG RÀO CẢN
             </h1>
-            <p className="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
-              Với mong muốn đồng hành kiến tạo tác động xã hội <br />thực chất thay vì những hoạt động truyền thông mang tính hình thức, SignEdu nỗ lực xóa bỏ mọi rào cản giao tiếp để xây dựng một cộng đồng thấu cảm bền vững.
+            <p className="text-lg md:text-xl text-on-surface-variant max-w-[38rem] leading-relaxed text-justify">
+              Với mong muốn đồng hành kiến tạo tác động xã hội thực chất thay vì những hoạt động truyền thông mang tính hình thức, SignEdu nỗ lực xóa bỏ mọi rào cản giao tiếp để xây dựng một cộng đồng thấu cảm bền vững.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <button className="bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all active:scale-95 shadow-lg shadow-primary/20">
+              <Link
+                href="/solutions"
+                className="bg-primary border-2 border-primary text-on-primary px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.03] hover:bg-surface-container-lowest/90 hover:text-primary hover:shadow-2xl hover:shadow-primary/35 active:translate-y-0 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30"
+              >
                 Khám phá giải pháp
-              </button>
-              <button className="bg-surface-container-lowest/80 backdrop-blur-sm border-2 border-primary text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-primary hover:text-on-primary transition-all active:scale-95">
+              </Link>
+              <Link
+                href="/contacts"
+                className="bg-surface-container-lowest/80 backdrop-blur-sm border-2 border-primary text-primary px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-primary/10 transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.03] hover:bg-primary hover:text-on-primary hover:shadow-2xl hover:shadow-primary/30 active:translate-y-0 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30"
+              >
                 Hợp tác cùng SignEdu
-              </button>
+              </Link>
             </div>
           </div>
         </div>
