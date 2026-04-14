@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Sparkles } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -38,9 +39,14 @@ export default function Navbar() {
               );
             })}
           </div>
-          <button className="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold text-sm hover:opacity-80 transition-all duration-300 active:scale-95">
-            Học Ngôn ngữ ký hiệu
-          </button>
+          <div className="relative group">
+            <div className="absolute -inset-1.5 bg-gradient-to-r from-[#f1d577] via-[#fff3c7] to-[#e7c760] rounded-full blur-md opacity-75 group-hover:opacity-100 animate-pulse transition duration-1000"></div>
+            <a href="https://app.signedu.info" target="_blank" rel="noopener noreferrer" className="relative overflow-hidden bg-gradient-to-r from-[#e7c760] to-[#f1d577] text-[#3D4DA3] px-9 py-3.5 rounded-full font-headline font-black text-[15px] tracking-wide shadow-[0_0_20px_rgba(241,213,119,0.5)] hover:shadow-[0_8px_30px_rgba(241,213,119,0.8)] hover:-translate-y-1.5 transition-all duration-500 active:translate-y-0 flex items-center gap-2 border-2 border-white/60 group-hover:border-white">
+              <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/80 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
+              <Sparkles className="w-5 h-5 text-[#3D4DA3] animate-pulse" style={{ animationDuration: '2s' }} />
+              <span className="relative z-10 drop-shadow-[0_2px_2px_rgba(255,255,255,0.6)]">Học NNKH</span>
+            </a>
+          </div>
         </div>
       </nav>
     </div>
