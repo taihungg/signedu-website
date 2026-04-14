@@ -17,7 +17,7 @@ export default function Home() {
             <img
               alt="SignEdu Hero Image"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida/ADBb0uj4TtsiMVyA-Upq_AB5bRUV5fhLfHpHMfcixxhOG6-UoPif3fHaIa8SDI6iFpUFk_1nabyCbsLRr75n1FYv6peqHB52BEDwoJXzWCu_-H9mG8zk1gB1pzSNqYhcEqlZfA6ZjQCMBDw0ywPEiR66hMfilAobi9YGhBWJMwclrnQBvrRnyNt05pn9hv4YorlDBBzCaH2zohT40VM-gvAUgwXgOGJLDUCQFKHOPOHQHJK11pjW1zEmfew1yP8NYt1lWqLeLIMIZMVIOg"
+              src="/images/hero.jpg"
             />
           </div>
         </div>
@@ -27,11 +27,11 @@ export default function Home() {
             <span className="text-tertiary font-bold tracking-widest uppercase text-sm">
               CHÀO MỪNG ĐẾN VỚI SIGNEDU
             </span>
-            <h1 className="font-headline font-extrabold text-[52px] md:text-[60px] leading-[1.15] text-on-surface">
-              Vì Một Việt Nam Hoà Nhập Không Rào Cản
+            <h1 className="font-headline font-extrabold text-[50px] md:text-[40px] leading-[1.15] text-on-surface">
+              VÌ MỘT VIỆT NAM <br />HOÀ NHẬP KHÔNG RÀO CẢN
             </h1>
             <p className="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
-              SignEdu tiên phong kiến tạo hệ sinh thái giáo dục và giao tiếp số, giúp xóa bỏ khoảng cách giữa người Khiếm thính và cộng đồng thông qua công nghệ ngôn ngữ ký hiệu tiên tiến.
+              Với mong muốn đồng hành kiến tạo tác động xã hội <br />thực chất thay vì những hoạt động truyền thông mang tính hình thức, SignEdu nỗ lực xóa bỏ mọi rào cản giao tiếp để xây dựng một cộng đồng thấu cảm bền vững.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <button className="bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all active:scale-95 shadow-lg shadow-primary/20">

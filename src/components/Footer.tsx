@@ -25,17 +25,17 @@ export default function Footer() {
           <h4 className="font-bold text-[#00105b]">Về chúng tôi</h4>
           <ul className="space-y-3">
             <li>
-              <Link href="#" className="text-[#00105b]/70 hover:text-[#00687b] transition-colors">
+              <Link href="#" className="text-[#00105b]/70 hover:text-[#83daf2] transition-colors">
                 Câu chuyện thương hiệu
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-[#00105b]/70 hover:text-[#00687b] transition-colors">
+              <Link href="#" className="text-[#00105b]/70 hover:text-[#83daf2] transition-colors">
                 Đội ngũ sáng lập
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-[#00105b]/70 hover:text-[#00687b] transition-colors">
+              <Link href="#" className="text-[#00105b]/70 hover:text-[#83daf2] transition-colors">
                 Báo chí &amp; Truyền thông
               </Link>
             </li>
@@ -45,17 +45,17 @@ export default function Footer() {
           <h4 className="font-bold text-[#00105b]">Hỗ trợ</h4>
           <ul className="space-y-3">
             <li>
-              <Link href="#" className="text-[#00105b]/70 hover:text-[#00687b] transition-colors">
+              <Link href="#" className="text-[#00105b]/70 hover:text-[#83daf2] transition-colors">
                 Trung tâm trợ giúp
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-[#00105b]/70 hover:text-[#00687b] transition-colors">
+              <Link href="#" className="text-[#00105b]/70 hover:text-[#83daf2] transition-colors">
                 Chính sách bảo mật
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-[#00105b]/70 hover:text-[#00687b] transition-colors">
+              <Link href="#" className="text-[#00105b]/70 hover:text-[#83daf2] transition-colors">
                 Điều khoản sử dụng
               </Link>
             </li>
