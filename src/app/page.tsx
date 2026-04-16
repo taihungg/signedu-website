@@ -12,22 +12,22 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#f1d577]/10 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/3 z-0 pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto w-full relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          
+
           {/* Text Content (Left) */}
           <div className="w-full lg:w-1/2 flex flex-col space-y-8">
             <span className="inline-block px-5 py-2 w-max bg-[#83daf2]/10 text-[#5FA3AD] border border-[#83daf2]/20 rounded-full text-sm font-bold tracking-widest uppercase">
               CHÀO MỪNG ĐẾN VỚI SIGNEDU
             </span>
-            
+
             <h1 className="font-headline font-bold text-4xl sm:text-5xl lg:text-[56px] leading-[1.3] text-[#00105b]">
               VÌ MỘT VIỆT NAM <br className="hidden md:block" />
               <span className="text-[#83daf2]">HÒA NHẬP<br />KHÔNG RÀO CẢN</span>
             </h1>
-            
+
             <p className="text-lg md:text-xl text-slate-600 max-w-[38rem] leading-relaxed font-sans text-justify">
               Với mong muốn đồng hành kiến tạo tác động xã hội thực chất thay vì những hoạt động truyền thông mang tính hình thức, SignEdu nỗ lực xóa bỏ mọi rào cản giao tiếp để xây dựng một cộng đồng thấu cảm bền vững.
             </p>
-            
+
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
                 href="/services"
@@ -46,16 +46,16 @@ export default function Home() {
 
           {/* Image (Right) */}
           <div className="w-full lg:w-1/2 relative group">
-             {/* Decorative element behind image */}
-             <div className="absolute inset-0 bg-gradient-to-tr from-[#83daf2] to-[#f1d577] rounded-[2rem] transform translate-x-4 translate-y-4 opacity-20 group-hover:translate-x-6 group-hover:translate-y-6 transition-all duration-500"></div>
-             
-             <div className="relative rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,16,91,0.1)] group-hover:shadow-[0_30px_60px_rgba(0,16,91,0.15)] transition-all duration-500 group-hover:-translate-y-2">
-                <img
-                  alt="SignEdu Inclusive Communication"
-                  className="w-full h-auto object-cover aspect-[4/3] transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                  src="/images/hero.jpg"
-                />
-             </div>
+            {/* Decorative element behind image */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#83daf2] to-[#f1d577] rounded-[2rem] transform translate-x-4 translate-y-4 opacity-20 group-hover:translate-x-6 group-hover:translate-y-6 transition-all duration-500"></div>
+
+            <div className="relative rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,16,91,0.1)] group-hover:shadow-[0_30px_60px_rgba(0,16,91,0.15)] transition-all duration-500 group-hover:-translate-y-2">
+              <img
+                alt="SignEdu Inclusive Communication"
+                className="w-full h-auto object-cover aspect-[4/3] transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                src="/images/hero.jpg"
+              />
+            </div>
           </div>
 
         </div>
@@ -112,14 +112,14 @@ export default function Home() {
       {/* Vision & Mission */}
       <section className="py-24 px-4 md:px-8 bg-gradient-to-br from-[#fde181]/50 to-[#f1d577]/40 transition-colors duration-500">
         <div className="max-w-[76rem] mx-auto grid lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-16 items-center">
-          
+
           {/* Left: 16:9 Video Player */}
           <div className="relative aspect-video w-full rounded-[2.5rem] overflow-hidden shadow-2xl shadow-[#3D4DA3]/10 bg-[#00105b] order-2 lg:order-1 focus-within:ring-4 focus-within:ring-[#83daf2]/50">
-            <iframe 
-              src="https://www.youtube.com/embed/bdFh1CqFvFk?autoplay=1&mute=1&loop=1&playlist=bdFh1CqFvFk&controls=1&rel=0" 
-              title="SignEdu Vision and Mission" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerPolicy="strict-origin-when-cross-origin" 
+            <iframe
+              src="https://www.youtube.com/embed/bdFh1CqFvFk?autoplay=1&mute=1&loop=1&playlist=bdFh1CqFvFk&controls=1&rel=0"
+              title="SignEdu Vision and Mission"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="absolute top-0 left-0 w-full h-full border-0 opacity-90 transition-opacity hover:opacity-100 duration-500"
             ></iframe>
@@ -130,7 +130,7 @@ export default function Home() {
             <h2 className="font-headline font-extrabold text-[42px] leading-tight text-[#00105b] max-w-[20ch]">
               Tầm nhìn & Sứ mệnh
             </h2>
-            
+
             <div className="space-y-8">
               {/* Vision Item */}
               <div className="flex gap-5 items-start">
@@ -182,7 +182,7 @@ export default function Home() {
       {/* Activities & Impact Layer */}
       <section className="py-24 md:py-32 px-4 md:px-8 bg-slate-50 relative overflow-hidden">
         <div className="max-w-[78rem] mx-auto space-y-10 md:space-y-14 relative z-10">
-          
+
           {/* Section Header */}
           <div className="text-center space-y-6 max-w-5xl mx-auto">
             <h2 className="font-headline font-extrabold text-[36px] md:text-[44px] text-[#00105b] leading-tight">
@@ -195,14 +195,14 @@ export default function Home() {
 
           {/* Activity Cards Grid */}
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-stretch">
-            
+
             {/* Card 1 - Workshop */}
             <div className="group bg-white rounded-[2rem] shadow-[0_8px_30px_rgba(0,16,91,0.04)] hover:shadow-[0_24px_50px_rgba(0,16,91,0.08)] hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 overflow-hidden flex flex-col border border-slate-100">
-              <ImageGallery 
+              <ImageGallery
                 images={[
-                  "/images/ws1.JPG",
-                  "/images/ws2.JPG",
-                  "/images/ws3.JPG"
+                  "/images/ws1.jpg",
+                  "/images/ws2.jpg",
+                  "/images/ws3.jpg"
                 ]}
                 badge={
                   <span className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#f1d577] text-[#3D4DA3] text-xs font-black uppercase tracking-wider rounded-xl shadow-lg border border-white/40">
@@ -218,7 +218,7 @@ export default function Home() {
                     Sự kiện đầu tiên đánh dấu bước tiến trong việc nâng cao kỹ năng giao tiếp cơ bản và lan tỏa văn hóa hòa nhập.
                   </p>
                 </div>
-                
+
                 {/* Metrics Grid */}
                 <div className="grid grid-cols-2 gap-4 mt-auto">
                   <div className="flex items-center gap-3">
@@ -272,7 +272,7 @@ export default function Home() {
 
             {/* Card 2 - Talkshow */}
             <div className="group bg-white rounded-[2rem] shadow-[0_8px_30px_rgba(0,16,91,0.04)] hover:shadow-[0_24px_50px_rgba(0,16,91,0.08)] hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 overflow-hidden flex flex-col border border-slate-100">
-              <ImageGallery 
+              <ImageGallery
                 images={[
                   "/images/ts1.jpg",
                   "/images/ts2.jpg",
@@ -292,7 +292,7 @@ export default function Home() {
                     Thảo luận chuyên sâu về các rào cản vô hình và giải pháp công nghệ kết nối hiện đại cùng các chuyên gia hàng đầu.
                   </p>
                 </div>
-                
+
                 {/* Metrics Grid */}
                 <div className="grid grid-cols-2 gap-4 mt-auto">
                   <div className="flex items-center gap-3">
@@ -342,12 +342,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
           </div>
 
           {/* Social Proof Layer: Testimonials & Media */}
           <div className="grid lg:grid-cols-[1fr_1.5fr] gap-8">
-            
+
             {/* Micro Social Proof Testimonial */}
             <div className="bg-[#f1d577]/15 rounded-[2rem] p-8 md:p-10 border border-[#f1d577]/40 flex flex-col justify-center relative overflow-hidden group">
               <span className="material-symbols-outlined absolute -top-4 -right-2 text-[#f1d577]/30 text-[180px] -rotate-12 select-none group-hover:scale-110 transition-transform duration-700">format_quote</span>
@@ -358,7 +358,7 @@ export default function Home() {
                 </p>
                 <div className="mt-8 flex items-center gap-4">
                   <div className="w-12 h-12 bg-white rounded-full overflow-hidden shadow-sm border border-slate-200 p-2 flex items-center justify-center">
-                     <span className="material-symbols-outlined text-slate-300">person</span>
+                    <span className="material-symbols-outlined text-slate-300">person</span>
                   </div>
                   <div>
                     <p className="font-bold text-[15px] text-[#3D4DA3]">Bạn Vũ Hồng Anh Thư</p>
@@ -371,7 +371,7 @@ export default function Home() {
             {/* Media Mention Banner */}
             <div className="bg-[#83daf2] rounded-[2rem] flex flex-col md:flex-row items-stretch text-white overflow-hidden relative shadow-2xl shadow-[#3D4DA3]/20">
               <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#83daf2]/30 to-transparent rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
-              
+
               {/* Image filling the entire left side perfectly (1/4 width) */}
               <div className="relative w-full md:w-[30%] min-h-[240px] flex-shrink-0 overflow-hidden group">
                 <img
@@ -380,7 +380,7 @@ export default function Home() {
                   src="/images/ws4.PNG"
                 />
               </div>
-              
+
               {/* Padded Text Content Area (3/4 width) */}
               <div className="flex-grow flex flex-col justify-center p-8 md:p-10 lg:p-12 space-y-6 relative z-10 text-center md:text-left w-full md:w-[70%]">
                 <p className="text-[17px] md:text-xl font-medium leading-relaxed italic text-white/95">
@@ -415,11 +415,11 @@ export default function Home() {
         {/* Background Gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#83daf2] to-[#5FA3AD] z-0 pointer-events-none"></div>
         {/* Subtle overlay decorative elements */}
-        <div 
-          className="absolute inset-0 opacity-[0.15] mix-blend-overlay pointer-events-none" 
+        <div
+          className="absolute inset-0 opacity-[0.15] mix-blend-overlay pointer-events-none"
           style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width=\\'60\\' height=\\'60\\' viewBox=\\'0 0 60 60\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cg fill=\\'none\\' fill-rule=\\'evenodd\\'%3E%3Cg fill=\\'%23ffffff\\' fill-opacity=\\'1\\'%3E%3Cpath d=\\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')" }}
         ></div>
-        
+
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-10 animate-in fade-in zoom-in-95 duration-1000 fill-mode-both">
           <div className="space-y-6">
             <h2 className="font-headline font-black text-4xl md:text-5xl lg:text-6xl text-white leading-tight drop-shadow-md">
@@ -429,16 +429,16 @@ export default function Home() {
               Hợp tác cùng chúng tôi để tạo ra những thay đổi thực chất và bền vững cho cộng đồng người Điếc.
             </p>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
-            <Link 
+            <Link
               href="/contacts"
               className="inline-flex items-center justify-center gap-2 px-10 py-4 lg:py-4 bg-[#f1d577] text-[#3D4DA3] rounded-full font-black text-base lg:text-lg tracking-wide hover:bg-[#1a2352] transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 transform active:scale-95 w-full sm:w-auto"
             >
               Liên hệ hợp tác
             </Link>
             <Link
-              href="/solutions" 
+              href="/solutions"
               className="inline-flex items-center justify-center gap-2 px-10 py-4 lg:py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-white/80 rounded-full font-bold text-base lg:text-lg tracking-wide hover:bg-white hover:text-[#5FA3AD] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 transform active:scale-95 w-full sm:w-auto"
             >
               Tìm hiểu giải pháp
