@@ -28,19 +28,27 @@ export default function Footer() {
               </a>
               <a href="tel:+84348325101" className="flex items-center gap-3 hover:text-[#83daf2] transition-colors group">
                 <span className="material-symbols-outlined text-[#3D4DA3] bg-[#f4f2ff] p-2.5 rounded-2xl group-hover:bg-[#83daf2] group-hover:text-white transition-all duration-300 shadow-sm group-hover:shadow-md group-hover:-translate-y-0.5">call</span>
-                (+84) 348 325 101
+                (+84) 348 325 101 (Ms. Thảo Vy)
               </a>
             </div>
 
             {/* Social Block */}
             <div className="flex flex-col items-center sm:items-start gap-5 text-[#00105b]/85 font-medium">
               <span className="opacity-50 text-xs uppercase tracking-widest font-extrabold mt-1">Theo dõi chúng tôi</span>
-              <a href="https://www.facebook.com/profile.php?id=61580129730953" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-[#3b5998] transition-colors group">
-                <div className="text-[#3D4DA3] bg-[#f4f2ff] p-2.5 rounded-2xl group-hover:bg-[#3b5998] group-hover:text-white transition-all duration-300 shadow-sm group-hover:shadow-md group-hover:-translate-y-0.5 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
-                </div>
-                SignEdu - Ký hiệu kết nối
-              </a>
+              <div className="flex flex-col gap-3">
+                <a href="https://www.facebook.com/profile.php?id=61580129730953" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-[#1877F2] transition-colors group">
+                  <div className="text-[#3D4DA3] bg-[#f4f2ff] p-2.5 rounded-2xl group-hover:bg-[#1877F2] transition-all duration-300 shadow-sm group-hover:shadow-md group-hover:-translate-y-0.5 flex items-center justify-center">
+                    <img src="/icons/facebook.svg" alt="Facebook" className="w-[22px] h-[22px] group-hover:brightness-0 group-hover:invert transition-all" />
+                  </div>
+                  SignEdu - Ký hiệu kết nối
+                </a>
+                <a href="https://zalo.me/0348325101" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-[#0068FF] transition-colors group">
+                  <div className="text-[#3D4DA3] bg-[#f4f2ff] p-2.5 rounded-2xl group-hover:bg-[#0068FF] transition-all duration-300 shadow-sm group-hover:shadow-md group-hover:-translate-y-0.5 flex items-center justify-center">
+                    <img src="/icons/zalo.svg" alt="Zalo" className="w-[22px] h-[22px] group-hover:brightness-0 group-hover:invert transition-all" />
+                  </div>
+                  0348 325 101 (Ms. Thảo Vy)
+                </a>
+              </div>
             </div>
 
           </div>
