@@ -364,33 +364,33 @@ export default function Home() {
                      <span className="material-symbols-outlined text-slate-300">person</span>
                   </div>
                   <div>
-                    <p className="font-bold text-[15px] text-[#3D4DA3]">Khán giả tham dự</p>
-                    <p className="text-xs text-on-surface-variant font-medium mt-0.5">Sự kiện Workshop</p>
+                    <p className="font-bold text-[15px] text-[#3D4DA3]">Bạn Vũ Hồng Anh Thư</p>
+                    <p className="text-xs text-on-surface-variant font-medium mt-0.5">Sinh viên Học viên Báo chí và Tuyên truyền</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Media Mention Banner */}
-            <div className="bg-[#3D4DA3] rounded-[2rem] p-8 md:p-12 pl-8 md:pl-16 flex flex-col md:flex-row items-center gap-10 text-white overflow-hidden relative shadow-2xl shadow-[#3D4DA3]/20">
-              <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#83daf2]/30 to-transparent rounded-full blur-3xl translate-x-1/3 -translate-y-1/3"></div>
+            <div className="bg-[#83daf2] rounded-[2rem] flex flex-col md:flex-row items-stretch text-white overflow-hidden relative shadow-2xl shadow-[#3D4DA3]/20">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#83daf2]/30 to-transparent rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
               
-              <div className="flex-shrink-0 relative z-10">
-                <div className="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 shadow-inner group">
-                  <img
-                    className="h-10 md:h-12 w-auto grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 max-w-[140px] object-contain cursor-pointer"
-                    alt="Press Logo"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCycZKDo2iy_gTijEtPcgNkboltipX3U1iRs1kzegKV84nNYV6_zMKQ_AI_SPV02jaMKBzntEszD2YszkrPXVxAFMBkOLBeoxW2bTrGbrSYVhlxKvTZqi30v3WFOksnaByBb928MlCz_xD1il_2U91WLpBLTuMNoCW0wg8af94m3oDMOUDuXaf8NsFVH6G0-75eQqy-9W4jidFT79qUBNmZUBEToHG4QlfU58Kv3Sqv9qcpavieOfFFxT5_C8zN72xs_ZOX8xtgcDk"
-                  />
-                </div>
+              {/* Image filling the entire left side perfectly (1/4 width) */}
+              <div className="relative w-full md:w-[30%] min-h-[240px] flex-shrink-0 overflow-hidden group">
+                <img
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  alt="Thumbnail"
+                  src="/images/ws4.PNG"
+                />
               </div>
               
-              <div className="flex-grow space-y-6 relative z-10 text-center md:text-left">
-                <p className="text-lg md:text-xl font-medium leading-relaxed italic text-white/95">
+              {/* Padded Text Content Area (3/4 width) */}
+              <div className="flex-grow flex flex-col justify-center p-8 md:p-10 lg:p-12 space-y-6 relative z-10 text-center md:text-left w-full md:w-[70%]">
+                <p className="text-[17px] md:text-xl font-medium leading-relaxed italic text-white/95">
                   "SignEdu mang đến một cách tiếp cận đột phá, biến hòa nhập thành hành động thực tiễn cho doanh nghiệp và giáo dục."
                 </p>
                 <div className="pt-2">
-                  <a href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-[#f1d577] text-[#3D4DA3] rounded-full font-black text-sm uppercase tracking-wider hover:bg-white transition-colors duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transform active:translate-y-0">
+                  <a href="https://baoquocte.vn/gop-phan-nang-cao-nhan-thuc-ve-ngon-ngu-ky-hieu-trong-moi-truong-giao-duc-334578.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-[#f1d577] text-[#3D4DA3] rounded-full font-black text-sm uppercase tracking-wider hover:bg-white transition-colors duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transform active:translate-y-0 w-fit">
                     Đọc bài viết <span className="material-symbols-outlined text-[18px]">open_in_new</span>
                   </a>
                 </div>
