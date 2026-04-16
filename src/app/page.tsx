@@ -145,7 +145,7 @@ export default function Home() {
                 <div>
                   <h3 className="font-headline font-bold text-xl text-[#00105b]">Tầm nhìn</h3>
                   <p className="text-on-surface-variant text-[15.5px] leading-relaxed mt-2 text-justify">
-                    Tầm nhìn của SignEdu là trở thành doanh nghiệp xã hội hàng đầu tại Việt Nam trong lĩnh vực cung cấp giải pháp hòa nhập cho người Điếc, đưa hòa nhập từ một giá trị xã hội trở thành năng lực phát triển của giáo dục, doanh nghiệp và cộng đồng.
+                    SignEdu đặt mục tiêu trở thành doanh nghiệp xã hội hàng đầu tại Việt Nam trong lĩnh vực cung cấp giải pháp hòa nhập cho người Điếc, đưa hòa nhập từ một giá trị xã hội trở thành năng lực phát triển của giáo dục, doanh nghiệp và cộng đồng.
                   </p>
                 </div>
               </div>
@@ -160,7 +160,7 @@ export default function Home() {
                 <div>
                   <h3 className="font-headline font-bold text-xl text-[#00105b]">Sứ mệnh</h3>
                   <p className="text-on-surface-variant text-[15.5px] leading-relaxed mt-2 text-justify">
-                    Sứ mệnh của SignEdu là giải quyết khoảng trống về hòa nhập với người Điếc thông qua các giải pháp dành cho giáo dục, doanh nghiệp và cộng đồng. Chúng tôi đưa hòa nhập từ nhận thức thành hành động và giá trị bền vững.
+                    SignEdu ra đời nhằm giải quyết khoảng trống về hòa nhập với người Điếc thông qua các giải pháp dành cho giáo dục, doanh nghiệp và cộng đồng. Chúng tôi đưa hòa nhập từ nhận thức thành hành động và giá trị bền vững.
                   </p>
                 </div>
               </div>
@@ -203,9 +203,9 @@ export default function Home() {
             <div className="group bg-white rounded-[2rem] shadow-[0_8px_30px_rgba(0,16,91,0.04)] hover:shadow-[0_24px_50px_rgba(0,16,91,0.08)] hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 overflow-hidden flex flex-col border border-slate-100">
               <ImageGallery 
                 images={[
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuAkRGxjLmH5W5eZhFZ4LSq6wpHDixejulT5KyhKzawfTcHLZKhr_N9j2nqhu7iBz_E2zTLFE08Q5NZlE95uFgsCan-BGAVJw_C7JMyWlrVkvozWuO1RzYylA70fAzVLgyY99KyXGSqHBqZAukiIhr_ZkeEVTPl7xmU1OdAtqIAGNd1hATxUijfWGqffye1mZ7AYK0o3UoFkTG69czEioHu3HCljKNB1jHYciu9fQ4WOd1mC481xBCyE4QnPun1LmG97TZZqIjnzqIo",
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuCFWfU5gEfFHCQ9Zzi2UIwL-owDBzS0WRFqumQmlri_a52TBoyFS27617TVp7CMF2Bw6ry35_3CBHb1kAStn9zigyXmisLzSSDcw8J6hyyH8BXN5ETUSb5EkElOLn-qA7xKR9m7auYOJX6DAAqsNgcdctCqV-iD_b6EEXzFSLedmOnD8a9Vv36U5xxWWYGAGHmFdp7qxDjRTIbfeBEutLik5pSy3WPshRnW2i6i97pQNnBaKxe9QHzuc-8uTdzwGD-wG0iiXc_omFs",
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuD_sWKLHzKxUbUPtchwfHgCDcRz4wXJxaSTZyOueGXi3-Ixif98wEO9mM_qhuvbGGsfC895hgg7YdAK07diZI2uYwXyKV0_VsKRBZZ3Du7Oe9XLMurCrBPuujg5g2WM9Xns0COTbWCcjNsHZsWvCU5TVKpY1wp253zkIHjVI4JV3CQ73e187EOiZz4gxAqHmxvkj-pVuKDoG6kop-xzpKmuyzYijfjghwVD2QqaoNJgOGejQsVn7VIF44u31g6INvtvtYy_YVkU7dM"
+                  "/images/ws1.JPG",
+                  "/images/ws2.JPG",
+                  "/images/ws3.JPG"
                 ]}
                 badge={
                   <span className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#f1d577] text-[#3D4DA3] text-xs font-black uppercase tracking-wider rounded-xl shadow-lg border border-white/40">
@@ -277,9 +277,9 @@ export default function Home() {
             <div className="group bg-white rounded-[2rem] shadow-[0_8px_30px_rgba(0,16,91,0.04)] hover:shadow-[0_24px_50px_rgba(0,16,91,0.08)] hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 overflow-hidden flex flex-col border border-slate-100">
               <ImageGallery 
                 images={[
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuCFWfU5gEfFHCQ9Zzi2UIwL-owDBzS0WRFqumQmlri_a52TBoyFS27617TVp7CMF2Bw6ry35_3CBHb1kAStn9zigyXmisLzSSDcw8J6hyyH8BXN5ETUSb5EkElOLn-qA7xKR9m7auYOJX6DAAqsNgcdctCqV-iD_b6EEXzFSLedmOnD8a9Vv36U5xxWWYGAGHmFdp7qxDjRTIbfeBEutLik5pSy3WPshRnW2i6i97pQNnBaKxe9QHzuc-8uTdzwGD-wG0iiXc_omFs",
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuAkRGxjLmH5W5eZhFZ4LSq6wpHDixejulT5KyhKzawfTcHLZKhr_N9j2nqhu7iBz_E2zTLFE08Q5NZlE95uFgsCan-BGAVJw_C7JMyWlrVkvozWuO1RzYylA70fAzVLgyY99KyXGSqHBqZAukiIhr_ZkeEVTPl7xmU1OdAtqIAGNd1hATxUijfWGqffye1mZ7AYK0o3UoFkTG69czEioHu3HCljKNB1jHYciu9fQ4WOd1mC481xBCyE4QnPun1LmG97TZZqIjnzqIo",
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuD_sWKLHzKxUbUPtchwfHgCDcRz4wXJxaSTZyOueGXi3-Ixif98wEO9mM_qhuvbGGsfC895hgg7YdAK07diZI2uYwXyKV0_VsKRBZZ3Du7Oe9XLMurCrBPuujg5g2WM9Xns0COTbWCcjNsHZsWvCU5TVKpY1wp253zkIHjVI4JV3CQ73e187EOiZz4gxAqHmxvkj-pVuKDoG6kop-xzpKmuyzYijfjghwVD2QqaoNJgOGejQsVn7VIF44u31g6INvtvtYy_YVkU7dM"
+                  "/images/ts1.jpg",
+                  "/images/ts2.jpg",
+                  "/images/ts3.jpg"
                 ]}
                 badge={
                   <span className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#e8f6ed] text-[#1e6938] text-xs font-black uppercase tracking-wider rounded-xl shadow-lg border border-white/40">
