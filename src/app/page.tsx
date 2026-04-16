@@ -413,27 +413,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Banner */}
-      <section className="py-24 px-8">
-        <div className="max-w-7xl mx-auto bg-primary rounded-[3rem] p-12 md:p-20 relative overflow-hidden text-center text-on-primary">
-          <div className="absolute inset-0 opacity-10 pointer-events-none">
-            <img
-              className="w-full h-full object-cover"
-              alt="abstract flowing blue gradient"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWgQSJGQAoTeYgFj_01M2EpxxfDB-yOR69wMwcSgJYS1n9CDZsRwbGquAwxq7ku5MBX9FUMbyrZkXWXGbsyyYtXBdPYu-Ym_74if5h9ruDy2JdskTOKlsgELcVFW6C_8LAQwcIAWqnnBMMHWH6aTcZtINiSloR_ZTYDO_kzF0kurPF51Gwoso6leUsjcYhq6VTxuXcrJ4c1JYrFThvreiL95SLOQHP0ZedhqFoTryGAgA8pSVKH3LlAN-pu64FWWCMfcilGi8UGJ4"
-            />
-          </div>
-          <div className="relative z-10 space-y-8 max-w-3xl mx-auto">
-            <h2 className="font-headline font-extrabold text-4xl md:text-5xl leading-tight">
-              Mỗi hành động nhỏ, một thay đổi lớn lao.
+      {/* Full-width CTA Banner */}
+      <section className="relative w-full py-28 md:py-28 flex flex-col items-center justify-center overflow-hidden">
+        {/* Background Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#83daf2] to-[#5FA3AD] z-0 pointer-events-none"></div>
+        {/* Subtle overlay decorative elements */}
+        <div 
+          className="absolute inset-0 opacity-[0.15] mix-blend-overlay pointer-events-none" 
+          style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width=\\'60\\' height=\\'60\\' viewBox=\\'0 0 60 60\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cg fill=\\'none\\' fill-rule=\\'evenodd\\'%3E%3Cg fill=\\'%23ffffff\\' fill-opacity=\\'1\\'%3E%3Cpath d=\\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')" }}
+        ></div>
+        
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-10 animate-in fade-in zoom-in-95 duration-1000 fill-mode-both">
+          <div className="space-y-6">
+            <h2 className="font-headline font-black text-4xl md:text-5xl lg:text-6xl text-white leading-tight drop-shadow-md">
+              Cùng SignEdu xây dựng một Việt Nam hòa nhập
             </h2>
-            <p className="text-xl opacity-90 leading-relaxed">
-              Hãy cùng chúng tôi kiến tạo một xã hội Việt Nam nơi âm thanh không còn là rào cản duy nhất của sự thấu hiểu.
+            <p className="text-lg md:text-2xl text-white/95 leading-relaxed max-w-3xl mx-auto drop-shadow-sm font-medium">
+              Hợp tác cùng chúng tôi để tạo ra những thay đổi thực chất và bền vững cho cộng đồng người Điếc.
             </p>
-            <div className="pt-6">
-              <button className="bg-[#fde181] text-on-tertiary-fixed px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-transform active:scale-95 shadow-2xl cursor-pointer">
-                Liên hệ hợp tác ngay
-              </button>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+            <Link 
+              href="/contacts"
+              className="inline-flex items-center justify-center gap-2 px-10 py-4 lg:py-4 bg-[#f1d577] text-[#3D4DA3] rounded-full font-black text-base lg:text-lg tracking-wide hover:bg-[#1a2352] transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 transform active:scale-95 w-full sm:w-auto"
+            >
+              Liên hệ hợp tác
+            </Link>
+            <Link
+              href="/solutions" 
+              className="inline-flex items-center justify-center gap-2 px-10 py-4 lg:py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-white/80 rounded-full font-bold text-base lg:text-lg tracking-wide hover:bg-white hover:text-[#5FA3AD] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 transform active:scale-95 w-full sm:w-auto"
+            >
+              Tìm hiểu giải pháp
+            </Link>
+          </div>
+
+          <div className="pt-10 flex flex-col items-center justify-center gap-3 text-white/80 text-sm md:text-base font-medium">
+            <p className="flex items-center gap-2 bg-black/10 px-4 py-2 rounded-full border border-white/10 backdrop-blur-sm">
+              <span className="material-symbols-outlined text-[18px] text-[#f1d577]">verified</span>
+              Đồng hành cùng đối tác vì môi trường giáo dục & doanh nghiệp bền vững
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-6 mt-2 opacity-90">
+              <a href="mailto:partner@signedu.vn" className="flex items-center gap-2 hover:text-white transition-colors"><span className="material-symbols-outlined text-[18px]">mail</span> signedu2025@gmail.com</a>
+              <a href="tel:+84936123456" className="flex items-center gap-2 hover:text-white transition-colors"><span className="material-symbols-outlined text-[18px]">call</span> (+84) 348 325 101</a>
             </div>
           </div>
         </div>
