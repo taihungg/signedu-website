@@ -104,52 +104,45 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* Social Proof / Stats */}
-      <section className="py-24 bg-gradient-to-r from-[#83daf2]/5 to-[#f1d577]/5 border-y border-[#00105b]/5 text-center w-full px-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="mb-14">
-            <span className="material-symbols-outlined text-[#83daf2] text-5xl mb-4 p-4 bg-white rounded-full shadow-sm border border-[#83daf2]/20">public</span>
-            <h2 className="text-3xl md:text-4xl font-headline font-bold text-[#00105b]">Lan tỏa mạnh mẽ hơn khi có bạn</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto mt-4 text-lg">Mỗi đối tác là một đại sứ mang văn hóa Điếc đến gần hơn với cộng đồng, cùng chúng tôi thu hẹp dần khoảng cách xã hội.</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 hover:border-[#83daf2]/30 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-              <strong className="block text-4xl font-headline font-black text-[#83daf2] mb-2">10+</strong>
-              <p className="text-[#00105b] font-bold text-lg">Đối tác tin cậy</p>
-              <span className="text-slate-500 text-sm">Gắn kết bền vững cùng sứ mệnh</span>
+      {/* Combined Social Proof & CTA Section */}
+      <section className="py-6 px-6 w-full relative">
+        <div className="max-w-5xl mx-auto relative z-10">
+          <div className="bg-white border border-[#83daf2]/20 shadow-[0_20px_50px_rgba(0,16,91,0.06)] rounded-[3rem] p-8 md:p-16 relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#f1d577]/10 rounded-full blur-3xl -mr-20 -mt-20 group-hover:scale-110 transition-transform duration-700"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#83daf2]/10 rounded-full blur-3xl -ml-20 -mb-20 group-hover:scale-110 transition-transform duration-700"></div>
+            
+            {/* Stats Grid Inside the Card */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10 mb-16 border-b border-slate-100 pb-12">
+              <div className="text-center">
+                <strong className="block text-5xl font-headline font-black text-[#83daf2] mb-3">10+</strong>
+                <p className="text-[#00105b] font-bold text-lg">Đối tác tin cậy</p>
+                <span className="text-slate-500 text-sm">Gắn kết bền vững cùng sứ mệnh</span>
+              </div>
+              <div className="text-center">
+                <strong className="block text-5xl font-headline font-black text-[#f1d577] mb-3">30+</strong>
+                <p className="text-[#00105b] font-bold text-lg">Dự án triển khai</p>
+                <span className="text-slate-500 text-sm">Hiệu quả thực tiễn, chuyển hóa năng lực</span>
+              </div>
+              <div className="text-center">
+                <strong className="block text-5xl font-headline font-black text-[#3D4DA3] mb-3">10.000+</strong>
+                <p className="text-[#00105b] font-bold text-lg">Người được lan tỏa</p>
+                <span className="text-slate-500 text-sm">Giá trị bao trùm, thay đổi nhận thức</span>
+              </div>
             </div>
-            <div className="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 hover:border-[#f1d577]/50 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-              <strong className="block text-4xl font-headline font-black text-[#f1d577] mb-2">30+</strong>
-              <p className="text-[#00105b] font-bold text-lg">Dự án triển khai</p>
-              <span className="text-slate-500 text-sm">Hiệu quả thực tiễn, chuyển hóa năng lực</span>
-            </div>
-            <div className="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 hover:border-[#3D4DA3]/30 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-              <strong className="block text-4xl font-headline font-black text-[#3D4DA3] mb-2">10.000+</strong>
-              <p className="text-[#00105b] font-bold text-lg">Người được lan tỏa</p>
-              <span className="text-slate-500 text-sm">Giá trị bao trùm, thay đổi nhận thức</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* CTA Box */}
-      <section className="py-32 px-6 max-w-5xl mx-auto">
-        <div className="bg-white border border-[#83daf2]/20 shadow-[0_20px_50px_rgba(0,16,91,0.06)] rounded-[3rem] p-12 md:p-16 text-center relative overflow-hidden group">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#f1d577]/10 rounded-full blur-3xl -mr-20 -mt-20 group-hover:scale-110 transition-transform duration-700"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#83daf2]/10 rounded-full blur-3xl -ml-20 -mb-20 group-hover:scale-110 transition-transform duration-700"></div>
-          
-          <h2 className="text-3xl md:text-5xl font-headline font-bold text-[#00105b] relative z-10 mb-6 group-hover:text-[#83daf2] transition-colors">
-            Trở thành đối tác của SignEdu
-          </h2>
-          <p className="text-slate-600 text-lg md:text-xl mb-10 max-w-2xl mx-auto relative z-10">
-            Cùng chúng tôi hiện thực hóa định hướng trách nhiệm xã hội và tạo ra những thay đổi mang tính cốt lõi cho một cộng đồng không rào cản.
-          </p>
-          
-          <div className="relative z-10">
-            <Link href="/contacts" className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#f1d577] text-[#3D4DA3] rounded-[2rem] font-bold text-lg hover:bg-[#e7c760] transition-all duration-300 shadow-md hover:shadow-[0_10px_30px_rgba(241,213,119,0.3)] hover:-translate-y-1 transform active:scale-95">
-              Liên hệ ngay <span className="material-symbols-outlined transition-transform duration-300">send</span>
-            </Link>
+            {/* CTA Content */}
+            <div className="text-center relative z-10">
+              <h2 className="text-3xl md:text-5xl font-headline font-bold text-[#00105b] mb-4 group-hover:text-[#83daf2] transition-colors">
+                Trở thành đối tác của SignEdu
+              </h2>
+              <p className="text-slate-600 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                Cùng chúng tôi hiện thực hóa định hướng trách nhiệm xã hội và tạo ra những thay đổi mang tính cốt lõi cho một cộng đồng không rào cản.
+              </p>
+              
+              <Link href="/contacts" className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#f1d577] text-[#3D4DA3] rounded-[2rem] font-bold text-lg hover:bg-[#e7c760] transition-all duration-300 shadow-md hover:shadow-[0_10px_30px_rgba(241,213,119,0.3)] hover:-translate-y-1 transform active:scale-95">
+                Liên hệ ngay <span className="material-symbols-outlined transition-transform duration-300">send</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
