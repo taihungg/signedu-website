@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Giải pháp - SignEdu",
-  description: "Giải pháp toàn diện của SignEdu",
+  title: "Dịch vụ - SignEdu",
+  description: "Dịch vụ toàn diện của SignEdu",
 };
 
 export default function SolutionsPage() {

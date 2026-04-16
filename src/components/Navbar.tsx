@@ -8,8 +8,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navLinks = [
-    { name: "Giới thiệu", href: "/" },
-    { name: "Giải pháp", href: "/solutions" },
+    { name: "Trang chủ", href: "/" },
+    { name: "Dịch vụ", href: "/services" },
     { name: "Đối tác", href: "/partners" },
     { name: "Thông tin khác", href: "/other-info" },
     { name: "Liên hệ", href: "/contacts" },
