@@ -438,7 +438,7 @@ export default function Home() {
               Liên hệ hợp tác
             </Link>
             <Link
-              href="/solutions"
+              href="/services"
               className="inline-flex items-center justify-center gap-2 px-10 py-4 lg:py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-white/80 rounded-full font-bold text-base lg:text-lg tracking-wide hover:bg-white hover:text-[#5FA3AD] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 transform active:scale-95 w-full sm:w-auto"
             >
               Tìm hiểu giải pháp
