@@ -16,7 +16,7 @@ export default function SolutionsPage() {
           </span>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#00105b] leading-[1.1] tracking-tight mb-8 font-headline max-w-4xl mx-auto">
             Hòa nhập thực chất,<br />
-            <span className="text-[#3D4DA3] italic">Phát triển bền vững.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#83daf2] to-[#f1d577] italic">Phát triển bền vững.</span>
           </h1>
           <p className="text-lg md:text-xl text-[#00105b]/70 leading-relaxed max-w-2xl mx-auto">
             Khám phá các chương trình giáo dục, tư vấn doanh nghiệp và nền tảng công nghệ giúp thu hẹp khoảng cách giao tiếp và kiến tạo cộng đồng thực sự bình đẳng.
