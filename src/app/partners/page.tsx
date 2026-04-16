@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 const partners = [
-  { name: "Đội Sinh viên Công tác Xã hội", img: "/partners/SVCTXH.jpg" },
+  { name: "Đội Sinh viên Công tác Xã hội", img: "/partners/svctxh.jpg" },
   { name: "Học viện Báo chí và Tuyên truyền", img: "/partners/ajc.jpg" },
   { name: "Cent", img: "/partners/cent.jpg" },
   { name: "Chạm", img: "/partners/chamj.jpg" },

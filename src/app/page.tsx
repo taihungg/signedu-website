@@ -53,7 +53,7 @@ export default function Home() {
               <img
                 alt="SignEdu Inclusive Communication"
                 className="w-full h-auto object-cover aspect-[4/3] transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                src="/images/hero.jpg"
+                src="/images/herosection.jpg"
               />
             </div>
           </div>
@@ -200,9 +200,9 @@ export default function Home() {
             <div className="group bg-white rounded-[2rem] shadow-[0_8px_30px_rgba(0,16,91,0.04)] hover:shadow-[0_24px_50px_rgba(0,16,91,0.08)] hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 overflow-hidden flex flex-col border border-slate-100">
               <ImageGallery
                 images={[
-                  "/images/ws1.jpg",
-                  "/images/ws2.jpg",
-                  "/images/ws3.jpg"
+                  "/images/ws_1.jpg",
+                  "/images/ws_2.jpg",
+                  "/images/ws_3.jpg"
                 ]}
                 badge={
                   <span className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#f1d577] text-[#3D4DA3] text-xs font-black uppercase tracking-wider rounded-xl shadow-lg border border-white/40">
