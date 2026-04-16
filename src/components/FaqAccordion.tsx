@@ -49,22 +49,33 @@ export default function FaqAccordion() {
         return (
           <div
             key={index}
-            className={`faq-item bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/10 ${
-              isActive ? "active" : ""
+            className={`bg-surface-container-lowest rounded-2xl border border-outline-variant/10 transition-all duration-300 overflow-hidden ${
+              isActive ? "shadow-md border-[#83daf2]/50" : "shadow-sm hover:shadow"
             }`}
           >
             <button
-              className="w-full p-6 text-left flex justify-between items-center group focus:outline-none cursor-pointer"
+              className="w-full p-6 text-left flex gap-4 justify-between items-center group focus:outline-none cursor-pointer"
               onClick={() => toggleFaq(index)}
+              aria-expanded={isActive}
             >
-              <span className="font-bold text-lg">{faq.question}</span>
-              <span className="material-symbols-outlined text-primary transition-transform duration-300">
+              <span className={`font-bold text-lg md:text-xl transition-colors duration-300 ${isActive ? "text-[#3D4DA3]" : "text-[#00105b]"}`}>
+                {faq.question}
+              </span>
+              <span 
+                className={`material-symbols-outlined transition-transform duration-300 ${isActive ? "rotate-180 text-[#83daf2]" : "text-[#3D4DA3]/40"}`}
+              >
                 expand_more
               </span>
             </button>
-            <div className="faq-answer">
-              <div className="px-6 pb-6 text-on-surface-variant leading-relaxed">
-                {faq.answer}
+            <div 
+              className={`grid transition-all duration-300 ease-in-out ${
+                isActive ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+              }`}
+            >
+              <div className="overflow-hidden">
+                <div className="px-6 pb-6 text-on-surface-variant leading-relaxed text-[15px] md:text-base">
+                  {faq.answer}
+                </div>
               </div>
             </div>
           </div>

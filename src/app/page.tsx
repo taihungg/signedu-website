@@ -406,7 +406,7 @@ export default function Home() {
       <section className="py-32 px-8 bg-surface-container-low">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="font-headline font-extrabold text-4xl">Giải đáp thắc mắc</h2>
+            <h2 className="font-headline font-extrabold text-4xl">Câu hỏi thường gặp</h2>
             <p className="text-on-surface-variant">Mọi thông tin bạn cần để bắt đầu đồng hành cùng SignEdu.</p>
           </div>
           <FaqAccordion />
