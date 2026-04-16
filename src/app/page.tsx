@@ -56,17 +56,33 @@ export default function Home() {
       </section>
 
       {/* Story Section */}
-      <section className="py-32 px-8 bg-surface">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
-          <div className="relative">
-            <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl">
-              <img
-                className="w-full h-full object-cover"
-                alt="emotional close-up of a person using sign language"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkRGxjLmH5W5eZhFZ4LSq6wpHDixejulT5KyhKzawfTcHLZKhr_N9j2nqhu7iBz_E2zTLFE08Q5NZlE95uFgsCan-BGAVJw_C7JMyWlrVkvozWuO1RzYylA70fAzVLgyY99KyXGSqHBqZAukiIhr_ZkeEVTPl7xmU1OdAtqIAGNd1hATxUijfWGqffye1mZ7AYK0o3UoFkTG69czEioHu3HCljKNB1jHYciu9fQ4WOd1mC481xBCyE4QnPun1LmG97TZZqIjnzqIo"
-              />
+      <section className="py-30 px-8 bg-surface">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-[0.9fr_1.1fr] gap-14 lg:gap-16 items-center">
+          <div className="relative w-full">
+            <div className="grid grid-cols-12 grid-rows-12 gap-3 sm:gap-4 h-[30rem] md:h-[34rem] lg:h-[38rem]">
+              <div className="col-span-8 row-span-12 rounded-[1.75rem] overflow-hidden shadow-xl shadow-primary/10">
+                <img
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  alt="people communicating through sign language"
+                  src="/images/8tt.jpg"
+                />
+              </div>
+              <div className="col-span-4 row-span-6 rounded-[1.25rem] overflow-hidden shadow-lg shadow-primary/10">
+                <img
+                  className="w-full h-full object-cover object-[62%_center] transition-transform duration-700 hover:scale-105"
+                  alt="close-up hands using sign language"
+                  src="/images/8tt.jpg"
+                />
+              </div>
+              <div className="col-span-4 row-span-6 rounded-[1.25rem] overflow-hidden shadow-lg shadow-primary/10">
+                <img
+                  className="w-full h-full object-cover object-[42%_center] transition-transform duration-700 hover:scale-105"
+                  alt="community learning sign language"
+                  src="/images/8tt.jpg"
+                />
+              </div>
             </div>
-            <div className="absolute -bottom-8 -right-8 bg-tertiary-fixed p-8 rounded-2xl shadow-lg max-w-[240px]">
+            <div className="absolute -bottom-6 -right-4 bg-tertiary-fixed p-7 rounded-2xl shadow-lg max-w-[220px]">
               <p className="font-bold text-on-tertiary-fixed text-2xl">100,000+</p>
               <p className="text-sm text-on-tertiary-fixed-variant">
                 Người khiếm thính được hỗ trợ tiếp cận giáo dục mỗi năm.
@@ -74,13 +90,13 @@ export default function Home() {
             </div>
           </div>
           <div className="space-y-8">
-            <h2 className="font-headline font-extrabold text-4xl text-on-surface">Câu chuyện của chúng tôi</h2>
-            <div className="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+            <h2 className="font-headline font-extrabold text-4xl text-on-surface">Về chúng tôi</h2>
+            <div className="space-y-6 text-on-surface-variant text-lg leading-relaxed text-justify">
               <p>
-                Tại Việt Nam, hàng triệu người Khiếm thính vẫn đang đối mặt với những rào cản vô hình trong học tập và công việc hàng ngày. Sự thiếu hụt các công cụ hỗ trợ ngôn ngữ ký hiệu khiến việc tiếp cận tri thức trở nên khó khăn.
+                Mô hình SignEdu đi thẳng vào một khoảng trống còn bỏ ngỏ: năng lực hòa nhập với người Điếc trong giáo dục, dịch vụ và môi trường làm việc. Chúng tôi không nhìn người Điếc như đối tượng cần được hỗ trợ, mà là những cộng sự cùng thiết kế giải pháp, cùng tham gia kiến tạo nên những mô hình hòa nhập có tính ứng dụng thực tế. Với SignEdu, tác động xã hội không dừng ở những hoạt động nâng cao nhận thức đơn lẻ, mà được chuyển hóa thành hành động, thành năng lực vận hành và thành những thay đổi có thể đo lường trong nhà trường, tổ chức và cộng đồng; đó là sản phẩm cốt lõi, là giá trị tạo khác biệt và cũng là động lực tạo doanh thu bền vững. Đồng thời, chúng tôi theo đuổi một hướng đi rõ ràng: gắn giá trị xã hội với tính bền vững của mô hình, để hòa nhập không đứng ngoài phát triển, mà trở thành một phần của phát triển.
               </p>
               <p>
-                SignEdu ra đời với niềm tin rằng mỗi cá nhân đều có quyền được lắng nghe và thấu hiểu. Chúng tôi kết hợp trí tuệ nhân tạo và sự tâm huyết của các chuyên gia ngôn ngữ để xây dựng một thế giới nơi giao tiếp là không giới hạn.
+                Hành trình này không chỉ của riêng SignEdu, mà gắn liền với sự phát triển và hòa nhập của xã hội. Những chuyển động của xã hội, từ nhu cầu hòa nhập trong giáo dục, dịch vụ đến môi trường làm việc, cũng là nền tảng để chúng tôi định hình cách phát triển và theo đuổi những đóng góp dài hạn cho cộng đồng người Điếc. Bởi với chúng tôi, hòa nhập là phát triển.
               </p>
             </div>
             <div className="pt-4">
