@@ -48,7 +48,7 @@ const services = [
     id: "consulting",
     title: "Tư vấn và triển khai giải pháp hòa nhập",
     shortDesc: "Xây dựng và triển khai chiến dịch CSR/USR, tư vấn tạo dựng môi trường làm việc - học tập bao trùm.",
-    image: "/images/ws2.jpg",
+    image: "/images/ws_2.jpg",
     highlights: [
       "Thiết kế chương trình CSR/USR",
       "Tư vấn môi trường bao trùm",
@@ -122,7 +122,7 @@ const services = [
     id: "platform",
     title: "Nền tảng số",
     shortDesc: "Cung cấp trải nghiệm học Ngôn ngữ ký hiệu qua video ngắn kết hợp kết nối cộng đồng và dịch vụ.",
-    image: "/images/ws3.jpg",
+    image: "/images/ws_3.jpg",
     highlights: [
       "Học Ngôn ngữ ký hiệu qua video ngắn",
       "Tiếp cận văn hóa Điếc thực tế",
