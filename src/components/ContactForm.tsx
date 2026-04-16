@@ -8,7 +8,7 @@ export default function ContactForm() {
     name: "",
     email: "",
     organization: "",
-    service_type: "school", // default value matches one of the radio buttons
+    service_type: "Nhà trường", // Changed defaults to match the radio buttons
     message: "",
   });
 
@@ -33,13 +33,6 @@ export default function ContactForm() {
         setStatus("error");
       } else {
         setStatus("success");
-        setFormData({
-          name: "",
-          email: "",
-          organization: "",
-          service_type: "school",
-          message: "",
-        });
       }
     } catch (err) {
       console.error("Unexpected error:", err);
@@ -49,169 +42,171 @@ export default function ContactForm() {
     }
   };
 
-  return (
-    <form className="space-y-8" onSubmit={handleSubmit}>
-      {status === "success" && (
-        <div className="p-4 bg-primary-container text-on-primary-container rounded-xl font-medium">
-          Cảm ơn bạn! Lời nhắn của bạn đã được gửi thành công.
-        </div>
-      )}
-      {status === "error" && (
-        <div className="p-4 bg-error-container text-on-error-container rounded-xl font-medium">
-          Có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại sau.
-        </div>
-      )}
+  const closeSuccessModal = () => {
+    setStatus("idle");
+    setFormData({
+      name: "",
+      email: "",
+      organization: "",
+      service_type: "Nhà trường",
+      message: "",
+    });
+  };
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  return (
+    <>
+      <form className="space-y-6" onSubmit={handleSubmit}>
+        {status === "error" && (
+          <div className="p-4 bg-red-50 text-red-600 rounded-2xl font-medium flex items-start gap-3 border border-red-100 animate-in fade-in slide-in-from-top-2">
+            <span className="material-symbols-outlined mt-0.5">error</span>
+            <div>
+              <strong className="block mb-1">Gửi không thành công</strong>
+              <p className="text-sm">Có lỗi xảy ra kết nối hệ thống. Vui lòng thử lại sau.</p>
+            </div>
+          </div>
+        )}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-2">
+            <label htmlFor="name" className="block text-sm font-bold text-[#00105b] ml-1">
+              Họ và tên *
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ví dụ: Nguyễn Văn A"
+              required
+              value={formData.name}
+              onChange={handleChange}
+              disabled={isSubmitting}
+              className="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-[#83daf2] focus:ring-4 focus:ring-[#83daf2]/20 text-[#00105b] placeholder:text-slate-400 transition-all outline-none"
+            />
+          </div>
+          <div className="space-y-2">
+            <label htmlFor="email" className="block text-sm font-bold text-[#00105b] ml-1">
+              Email *
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@company.com"
+              required
+              value={formData.email}
+              onChange={handleChange}
+              disabled={isSubmitting}
+              className="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-[#83daf2] focus:ring-4 focus:ring-[#83daf2]/20 text-[#00105b] placeholder:text-slate-400 transition-all outline-none"
+            />
+          </div>
+        </div>
+
         <div className="space-y-2">
-          <label htmlFor="name" className="block text-sm font-semibold text-on-surface ml-1">
-            Họ và tên
+          <label htmlFor="organization" className="block text-sm font-bold text-[#00105b] ml-1">
+            Tổ chức / Đơn vị
           </label>
           <input
             type="text"
-            id="name"
-            name="name"
-            placeholder="Nguyễn Văn A"
-            required
-            value={formData.name}
+            id="organization"
+            name="organization"
+            placeholder="Tên trường học, doanh nghiệp hoặc dự án"
+            value={formData.organization}
             onChange={handleChange}
             disabled={isSubmitting}
-            className="w-full px-5 py-4 rounded-xl bg-surface-container border-none focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-outline"
+            className="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-[#83daf2] focus:ring-4 focus:ring-[#83daf2]/20 text-[#00105b] placeholder:text-slate-400 transition-all outline-none"
           />
         </div>
+
+        <div className="space-y-3">
+          <label className="block text-sm font-bold text-[#00105b] ml-1">
+            Đối tượng
+          </label>
+          <div className="flex flex-wrap gap-4">
+            {["Nhà trường", "Doanh nghiệp", "Cá nhân"].map((type) => (
+              <label key={type} className="flex items-center gap-3 cursor-pointer group p-3 pr-5 rounded-xl border border-slate-200 hover:border-[#83daf2] transition-colors has-[:checked]:border-[#83daf2] has-[:checked]:bg-[#83daf2]/5">
+                <div className="relative flex items-center justify-center shrink-0">
+                  <input
+                    type="radio"
+                    name="service_type"
+                    value={type}
+                    checked={formData.service_type === type}
+                    onChange={handleChange}
+                    disabled={isSubmitting}
+                    className="peer appearance-none w-5 h-5 rounded-full border-2 border-slate-300 checked:border-[#83daf2] transition-all cursor-pointer m-0"
+                  />
+                  <div className="absolute w-2.5 h-2.5 rounded-full bg-[#83daf2] scale-0 peer-checked:scale-100 transition-transform pointer-events-none"></div>
+                </div>
+                <span className="text-slate-700 font-medium group-hover:text-[#00105b] peer-checked:text-[#00105b] transition-colors">
+                  {type}
+                </span>
+              </label>
+            ))}
+          </div>
+        </div>
+
         <div className="space-y-2">
-          <label htmlFor="email" className="block text-sm font-semibold text-on-surface ml-1">
-            Email
+          <label htmlFor="message" className="block text-sm font-bold text-[#00105b] ml-1">
+            Nội dung chi tiết
           </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="name@company.com"
-            required
-            value={formData.email}
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Hãy mô tả rõ hơn về yêu cầu tư vấn, chúng tôi sẽ chuẩn bị trước giải pháp phù hợp nhất..."
+            rows={5}
+            value={formData.message}
             onChange={handleChange}
             disabled={isSubmitting}
-            className="w-full px-5 py-4 rounded-xl bg-surface-container border-none focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-outline"
-          />
+            className="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-[#83daf2] focus:ring-4 focus:ring-[#83daf2]/20 text-[#00105b] placeholder:text-slate-400 resize-none transition-all outline-none"
+          ></textarea>
         </div>
-      </div>
 
-      <div className="space-y-2">
-        <label htmlFor="organization" className="block text-sm font-semibold text-on-surface ml-1">
-          Tổ chức / Đơn vị (Tùy chọn)
-        </label>
-        <input
-          type="text"
-          id="organization"
-          name="organization"
-          placeholder="Tên công ty hoặc trường học"
-          value={formData.organization}
-          onChange={handleChange}
-          disabled={isSubmitting}
-          className="w-full px-5 py-4 rounded-xl bg-surface-container border-none focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-outline"
-        />
-      </div>
-
-      <div className="space-y-3">
-        <label className="block text-sm font-semibold text-on-surface ml-1">
-          Loại dịch vụ cần tư vấn
-        </label>
-        <div className="flex flex-wrap gap-4">
-          <label className="flex items-center gap-2 cursor-pointer group">
-            <div className="relative flex items-center justify-center">
-              <input
-                type="radio"
-                name="service_type"
-                value="school"
-                checked={formData.service_type === "school"}
-                onChange={handleChange}
-                disabled={isSubmitting}
-                className="peer appearance-none w-5 h-5 rounded-full border-2 border-outline-variant checked:border-primary transition-all"
-              />
-              <div className="absolute w-2.5 h-2.5 rounded-full bg-primary scale-0 peer-checked:scale-100 transition-transform"></div>
-            </div>
-            <span className="text-on-surface-variant group-hover:text-primary transition-colors">
-              Trường học
-            </span>
-          </label>
-
-          <label className="flex items-center gap-2 cursor-pointer group">
-            <div className="relative flex items-center justify-center">
-              <input
-                type="radio"
-                name="service_type"
-                value="business"
-                checked={formData.service_type === "business"}
-                onChange={handleChange}
-                disabled={isSubmitting}
-                className="peer appearance-none w-5 h-5 rounded-full border-2 border-outline-variant checked:border-primary transition-all"
-              />
-              <div className="absolute w-2.5 h-2.5 rounded-full bg-primary scale-0 peer-checked:scale-100 transition-transform"></div>
-            </div>
-            <span className="text-on-surface-variant group-hover:text-primary transition-colors">
-              Doanh nghiệp
-            </span>
-          </label>
-
-          <label className="flex items-center gap-2 cursor-pointer group">
-            <div className="relative flex items-center justify-center">
-              <input
-                type="radio"
-                name="service_type"
-                value="individual"
-                checked={formData.service_type === "individual"}
-                onChange={handleChange}
-                disabled={isSubmitting}
-                className="peer appearance-none w-5 h-5 rounded-full border-2 border-outline-variant checked:border-primary transition-all"
-              />
-              <div className="absolute w-2.5 h-2.5 rounded-full bg-primary scale-0 peer-checked:scale-100 transition-transform"></div>
-            </div>
-            <span className="text-on-surface-variant group-hover:text-primary transition-colors">
-              Cá nhân
-            </span>
-          </label>
+        <div className="pt-6">
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="w-full py-4.5 bg-[#f1d577] text-[#3D4DA3] rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-[#e7c760] transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-70 disabled:cursor-wait hover:-translate-y-1 transform active:scale-95 group"
+          >
+             {isSubmitting ? (
+              <span className="flex items-center gap-2">
+                <span className="material-symbols-outlined animate-spin text-[22px]">progress_activity</span>
+                Đang xử lý...
+              </span>
+            ) : (
+               <span className="flex items-center gap-3">
+                 Gửi yêu cầu tư vấn <span className="material-symbols-outlined text-[20px] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">send</span>
+               </span>
+            )}
+          </button>
         </div>
-      </div>
+      </form>
 
-      <div className="space-y-2">
-        <label htmlFor="message" className="block text-sm font-semibold text-on-surface ml-1">
-          Lời nhắn
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Hãy cho chúng tôi biết bạn đang quan tâm đến giải pháp nào..."
-          required
-          rows={5}
-          value={formData.message}
-          onChange={handleChange}
-          disabled={isSubmitting}
-          className="w-full px-5 py-4 rounded-xl bg-surface-container border-none focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-outline resize-none"
-        ></textarea>
-      </div>
-
-      <div className="pt-4">
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="w-full md:w-auto px-10 py-5 bg-primary text-on-primary rounded-full font-bold flex items-center justify-center gap-3 hover:bg-surface-tint transition-all shadow-lg active:scale-95 group disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          <span>{isSubmitting ? "Đang gửi..." : "Gửi tin nhắn ngay"}</span>
-          {!isSubmitting && (
-            <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
-              send
-            </span>
-          )}
-        </button>
-        <p className="mt-4 text-xs text-on-surface-variant text-center md:text-left">
-          Chúng tôi cam kết bảo mật thông tin của bạn theo{" "}
-          <a href="#" className="underline font-medium">
-            Chính sách quyền riêng tư
-          </a>
-          .
-        </p>
-      </div>
-    </form>
+      {/* Success Modal Overlay */}
+      {status === "success" && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+           {/* Backdrop */}
+           <div 
+             className="absolute inset-0 bg-[#00105b]/60 backdrop-blur-sm animate-in fade-in duration-300" 
+             onClick={closeSuccessModal}
+           ></div>
+           
+           {/* Modal Card */}
+           <div className="relative bg-white rounded-[2rem] p-8 md:p-12 shadow-[0_24px_50px_rgba(0,16,91,0.2)] w-full max-w-md text-center animate-in zoom-in-95 fade-in duration-300 border border-[#83daf2]/20">
+              <div className="w-24 h-24 bg-[#83daf2]/10 text-[#83daf2] rounded-full flex items-center justify-center mx-auto mb-8 border border-[#83daf2]/20 shadow-inner">
+                 <span className="material-symbols-outlined text-5xl">check_circle</span>
+              </div>
+              <h3 className="text-3xl font-headline font-bold text-[#00105b] mb-4">Gửi thành công!</h3>
+              <p className="text-slate-600 mb-8 leading-relaxed text-lg">
+                Cảm ơn bạn đã liên hệ.<br/>Đội ngũ SignEdu đã nhận được yêu cầu và sẽ phản hồi cho bạn trong <strong className="text-[#83daf2]">24–48 giờ</strong> tới.
+              </p>
+              <button 
+                onClick={closeSuccessModal}
+                className="w-full py-4 bg-[#83daf2]/10 text-[#83daf2] border border-[#83daf2]/20 font-bold rounded-2xl hover:bg-[#83daf2] hover:text-white transition-colors duration-300 text-lg shadow-sm"
+              >
+                Đóng
+              </button>
+           </div>
+        </div>
+      )}
+    </>
   );
 }

@@ -8,93 +8,110 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="pt-24 pb-12 px-8 max-w-7xl mx-auto w-full">
-        <div className="max-w-3xl">
-          <span className="text-tertiary font-semibold tracking-wider text-sm uppercase mb-4 block">
+      {/* Hero Section */}
+      <section className="pt-32 pb-16 px-8 max-w-7xl mx-auto w-full text-center md:text-left">
+        <div className="max-w-5xl mx-auto md:mx-0">
+          <span className="inline-block px-5 py-2 bg-[#83daf2]/10 text-[#83daf2] rounded-full text-sm font-bold tracking-widest uppercase mb-6 border border-[#83daf2]/20">
             Kết nối cùng chúng tôi
           </span>
-          <h1 className="text-5xl md:text-6xl font-headline font-extrabold text-on-background tracking-tight mb-6">
-            Mọi khoảng cách đều có thể <span className="text-primary italic">thu hẹp.</span>
+          <h1 className="text-5xl md:text-5xl font-headline font-extrabold text-[#00105b] tracking-tight mb-6">
+            Mọi khoảng cách đều có thể <span className="text-[#83daf2] italic">thu hẹp.</span>
           </h1>
-          <p className="text-on-surface-variant text-lg leading-relaxed max-w-2xl">
-            Chúng tôi luôn sẵn sàng lắng nghe các ý tưởng, phản hồi và cơ hội hợp tác để cùng nhau kiến tạo một cộng đồng không rào cản cho người Khiếm thính.
+          <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto md:mx-0">
+            Chúng tôi luôn sẵn sàng lắng nghe các ý tưởng, phản hồi và cơ hội hợp tác để cùng nhau kiến tạo một cộng đồng không rào cản cho người Điếc.
           </p>
         </div>
       </section>
 
       {/* Main Content Area */}
-      <section className="pb-32 px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-          {/* Contact Form Sidebar/Info */}
-          <div className="lg:col-span-4 space-y-12">
-            <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined">mail</span>
+      <section className="pb-32 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          
+          {/* Left: Contact Info */}
+          <div className="lg:col-span-5 space-y-10">
+            <div className="bg-white p-8 md:p-10 rounded-[2rem] shadow-[0_8px_30px_rgba(0,16,91,0.06)] border border-slate-100 space-y-8 relative overflow-hidden">
+              
+              <h2 className="text-2xl font-bold font-headline text-[#00105b] mb-6 relative z-10">Thông tin liên hệ</h2>
+              
+              <div className="flex items-start gap-5 group relative z-10">
+                <div className="w-14 h-14 rounded-2xl bg-[#83daf2]/10 flex items-center justify-center text-[#83daf2] group-hover:scale-110 group-hover:bg-[#83daf2] group-hover:text-white transition-all duration-300 shrink-0 shadow-sm border border-[#83daf2]/20">
+                  <span className="material-symbols-outlined text-3xl">mail</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-on-background">Email hỗ trợ</h3>
-                  <p className="text-on-surface-variant">hello@signedu.vn</p>
-                  <p className="text-on-surface-variant">support@signedu.vn</p>
+                  <h3 className="font-bold text-[#00105b] text-lg mb-1">Email</h3>
+                  <a href="mailto:hello@signedu.vn" className="text-slate-600 font-medium block hover:text-[#83daf2] transition-colors">signedu2025@gmail.com</a>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined">call</span>
+
+              <div className="flex items-start gap-5 group relative z-10">
+                <div className="w-14 h-14 rounded-2xl bg-[#f1d577]/10 flex items-center justify-center text-[#d1ac2c] group-hover:scale-110 group-hover:bg-[#f1d577] group-hover:text-[#3D4DA3] transition-all duration-300 shrink-0 shadow-sm border border-[#f1d577]/30">
+                  <span className="material-symbols-outlined text-3xl">call</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-on-background">Điện thoại</h3>
-                  <p className="text-on-surface-variant">+84 (24) 3456 7890</p>
-                  <p className="text-on-surface-variant">Thứ 2 - Thứ 6: 08:00 - 17:00</p>
+                  <h3 className="font-bold text-[#00105b] text-lg mb-1">Điện thoại</h3>
+                  <p className="text-slate-600 font-medium">+84 348 325 101 (Ms. Thảo Vy)</p>
+                  <p className="text-slate-500 text-sm mt-1 bg-slate-50 inline-block px-2 py-1 rounded-md border border-slate-100">Thứ 2 - Thứ 6: 08:00 - 17:00</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined">location_on</span>
+
+              <div className="flex items-start gap-5 group relative z-10">
+                <div className="w-14 h-14 rounded-2xl bg-[#3D4DA3]/10 flex items-center justify-center text-[#3D4DA3] group-hover:scale-110 group-hover:bg-[#3D4DA3] group-hover:text-white transition-all duration-300 shrink-0 shadow-sm border border-[#3D4DA3]/20">
+                  <span className="material-symbols-outlined text-3xl">location_on</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-on-background">Văn phòng</h3>
-                  <p className="text-on-surface-variant">Tầng 12, Tòa nhà Innovation</p>
-                  <p className="text-on-surface-variant">Quận Cầu Giấy, Hà Nội, Việt Nam</p>
+                  <h3 className="font-bold text-[#00105b] text-lg mb-1">Văn phòng</h3>
+                  <p className="text-slate-600 font-medium leading-relaxed">Tòa nhà ABC<br/>Học viện Báo chí và Tuyên truyền</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-5 group pt-8 border-t border-slate-100 relative z-10">
+                <div className="w-14 h-14 rounded-2xl bg-[#00105b]/5 flex items-center justify-center text-[#00105b] group-hover:scale-110 group-hover:bg-[#1877F2] group-hover:text-white transition-all duration-300 shrink-0 shadow-sm border border-[#00105b]/10">
+                  <svg fill="currentColor" viewBox="0 0 24 24" className="w-8 h-8"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" /></svg>
+                </div>
+                <div>
+                  <h3 className="font-bold text-[#00105b] text-lg mb-1">Facebook</h3>
+                  <a href="https://www.facebook.com/profile.php?id=61580129730953" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#00105b] font-bold hover:text-[#1877F2] transition-colors">
+                    SignEdu - Ký hiệu kết nối <span className="material-symbols-outlined text-[16px]">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-5 group relative z-10">
+                <div className="w-14 h-14 rounded-2xl bg-[#00105b]/5 flex items-center justify-center text-[#00105b] group-hover:scale-110 group-hover:bg-[#0068FF] group-hover:text-white transition-all duration-300 shrink-0 shadow-sm border border-[#00105b]/10">
+                  <span className="font-extrabold text-[15px] tracking-wider">Zalo</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-[#00105b] text-lg mb-1">Zalo</h3>
+                  <a href="https://zalo.me/0348325101" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-slate-600 font-bold hover:text-[#0068FF] transition-colors">
+                    0348 325 101 <span className="material-symbols-outlined text-[16px]">open_in_new</span>
+                  </a>
                 </div>
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="relative w-full aspect-square rounded-[1.5rem] overflow-hidden shadow-sm bg-surface-container">
-              <img
-                className="w-full h-full object-cover grayscale opacity-60"
-                alt="Modern minimalist 3D map illustration showing an urban district with soft blue and white building blocks"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7TMj23qQ4YOI5u-Xl8Nu9eX7AJ0bfEBy2NE8smDbB8s_rERhXyaLDF8cV280NCQ9RZKffWakph0TS781PoDDjmP1tTaZ6ek8SCri_uxOffbiyYjwM0kgYkFBx1eF6mH-SflAeOJkbml2SnVsqaSYYsuptX8-6-l36VPNzen9VQIO-u8j40gUcQkuUDSQSlDAUN2dxGBOCJfTVPigPchoST9m2QrUceBX8nIKB3iIYfXJzDwGCnd98YJFe0zfKbKbDmbIO5vm_J7M"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-primary text-on-primary p-4 rounded-full shadow-lg">
-                  <span className="material-symbols-outlined">push_pin</span>
-                </div>
-              </div>
+            {/* Microcopy box on left */}
+            <div className="bg-[#83daf2]/5 p-6 md:p-8 rounded-[2rem] border border-[#83daf2]/20 flex items-start gap-5 shadow-sm">
+               <span className="material-symbols-outlined text-[#83daf2] text-4xl shrink-0">schedule</span>
+               <div>
+                 <strong className="text-[#00105b] text-lg block font-bold mb-2">Cam kết phản hồi</strong>
+                 <p className="text-slate-700 italic leading-relaxed">Chúng tôi sẽ phản hồi yêu cầu tư vấn trong vòng <span className="font-bold text-[#83daf2] bg-white px-2 py-0.5 rounded-md shadow-sm ml-1">24–48 giờ</span> làm việc.</p>
+               </div>
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="lg:col-span-8 bg-surface-container-lowest p-8 md:p-12 rounded-[2rem] shadow-[0_12px_32px_rgba(0,16,91,0.04)]">
-            <ContactForm />
+          {/* Right: Contact Form */}
+          <div className="lg:col-span-7">
+            <div className="bg-white p-8 md:p-12 rounded-[2rem] shadow-[0_12px_40px_rgba(0,16,91,0.08)] border border-[#83daf2]/10 relative overflow-hidden">
+               {/* Decorative border top */}
+               <div className="absolute top-0 left-0 w-full h-1.5 bg-[#83daf2]"></div>
+               
+               <div className="mb-10 text-center md:text-left">
+                 <h2 className="text-3xl md:text-4xl font-headline font-bold text-[#00105b] mb-4">Gửi yêu cầu tư vấn</h2>
+               </div>
+               <ContactForm />
+            </div>
           </div>
-        </div>
-      </section>
 
-      {/* FAQ CTA Section */}
-      <section className="bg-surface-container-low py-24 px-8 w-full">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-headline font-bold mb-6">Bạn có thắc mắc khác?</h2>
-          <p className="text-on-surface-variant mb-10 text-lg">
-            Tìm hiểu thêm các câu hỏi thường gặp về cách SignEdu vận hành và các gói giải pháp cho giáo dục.
-          </p>
-          <a
-            href="/"
-            className="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all"
-          >
-            Xem trung tâm hỗ trợ <span className="material-symbols-outlined">arrow_forward</span>
-          </a>
         </div>
       </section>
     </>
