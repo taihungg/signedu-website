@@ -6,54 +6,59 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[700px] flex items-center overflow-hidden bg-surface-container-lowest">
-        {/* Background Image with broad fade */}
-        <div className="absolute top-0 right-0 w-full md:w-[70%] h-full z-0 overflow-hidden">
-          <div
-            className="absolute inset-0 w-full h-full"
-            style={{
-              maskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.1) 15%, black 45%)",
-              WebkitMaskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.1) 15%, black 45%)",
-            }}
-          >
-            <img
-              alt="SignEdu Hero Image"
-              className="w-full h-full object-cover"
-              src="/images/hero.jpg"
-            />
-          </div>
-        </div>
-        {/* Content Container overlapping the image */}
-        <div className="max-w-7xl mx-auto w-full relative z-10 px-8">
-          <div className="max-w-2xl py-20 flex flex-col justify-center space-y-8">
-            <span className="text-tertiary font-bold tracking-widest uppercase text-sm">
+      <section className="relative px-6 py-20 lg:py-32 overflow-hidden bg-white">
+        {/* Soft Decorative Background */}
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-[#83daf2]/10 to-[#5FA3AD]/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 z-0 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#f1d577]/10 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/3 z-0 pointer-events-none"></div>
+
+        <div className="max-w-7xl mx-auto w-full relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+          
+          {/* Text Content (Left) */}
+          <div className="w-full lg:w-1/2 flex flex-col space-y-8">
+            <span className="inline-block px-5 py-2 w-max bg-[#83daf2]/10 text-[#5FA3AD] border border-[#83daf2]/20 rounded-full text-sm font-bold tracking-widest uppercase">
               CHÀO MỪNG ĐẾN VỚI SIGNEDU
             </span>
-            <h1 className="font-headline font-extrabold text-[50px] md:text-[40px] leading-[1.15] text-on-surface">
-              VÌ MỘT VIỆT NAM <br />HOÀ NHẬP KHÔNG RÀO CẢN
+            
+            <h1 className="font-headline font-bold text-4xl sm:text-5xl lg:text-[56px] leading-[1.3] text-[#00105b]">
+              VÌ MỘT VIỆT NAM <br className="hidden md:block" />
+              <span className="text-[#83daf2]">HÒA NHẬP<br />KHÔNG RÀO CẢN</span>
             </h1>
-            <p className="text-lg md:text-xl text-on-surface-variant max-w-[38rem] leading-relaxed text-justify">
+            
+            <p className="text-lg md:text-xl text-slate-600 max-w-[38rem] leading-relaxed font-sans text-justify">
               Với mong muốn đồng hành kiến tạo tác động xã hội thực chất thay vì những hoạt động truyền thông mang tính hình thức, SignEdu nỗ lực xóa bỏ mọi rào cản giao tiếp để xây dựng một cộng đồng thấu cảm bền vững.
             </p>
+            
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
-                href="/solutions"
-                className="bg-primary border-2 border-primary text-on-primary px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.03] hover:bg-surface-container-lowest/90 hover:text-primary hover:shadow-2xl hover:shadow-primary/35 active:translate-y-0 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30"
+                href="/services"
+                className="bg-[#83daf2] text-[#00105b] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#6ccbeb] transition-all duration-300 shadow-sm hover:shadow-[0_10px_30px_rgba(131,218,242,0.3)] hover:-translate-y-1 transform active:scale-95 flex items-center gap-2"
               >
-                Khám phá giải pháp
+                Khám phá giải pháp <span className="material-symbols-outlined text-sm">arrow_forward</span>
               </Link>
               <Link
                 href="/contacts"
-                className="bg-surface-container-lowest/80 backdrop-blur-sm border-2 border-primary text-primary px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-primary/10 transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.03] hover:bg-primary hover:text-on-primary hover:shadow-2xl hover:shadow-primary/30 active:translate-y-0 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30"
+                className="bg-transparent border-2 border-[#00105b]/10 text-[#00105b] px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:border-[#83daf2] hover:text-[#83daf2] hover:bg-[#83daf2]/5 active:scale-95 flex items-center"
               >
                 Hợp tác cùng SignEdu
               </Link>
             </div>
           </div>
+
+          {/* Image (Right) */}
+          <div className="w-full lg:w-1/2 relative group">
+             {/* Decorative element behind image */}
+             <div className="absolute inset-0 bg-gradient-to-tr from-[#83daf2] to-[#f1d577] rounded-[2rem] transform translate-x-4 translate-y-4 opacity-20 group-hover:translate-x-6 group-hover:translate-y-6 transition-all duration-500"></div>
+             
+             <div className="relative rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,16,91,0.1)] group-hover:shadow-[0_30px_60px_rgba(0,16,91,0.15)] transition-all duration-500 group-hover:-translate-y-2">
+                <img
+                  alt="SignEdu Inclusive Communication"
+                  className="w-full h-auto object-cover aspect-[4/3] transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                  src="/images/hero.jpg"
+                />
+             </div>
+          </div>
+
         </div>
-        {/* Background Accents */}
-        <div className="absolute -top-20 -right-20 w-80 h-80 bg-primary/10 rounded-full blur-[80px] -z-10"></div>
-        <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-tertiary-container/20 rounded-full blur-[60px] -z-10"></div>
       </section>
 
       {/* Story Section */}
@@ -161,12 +166,12 @@ export default function Home() {
             <hr className="border-[#00105b]/15 rounded-full" />
 
             {/* Quote Block */}
-            <div className="flex gap-4 items-start pl-1">
+            <div className="flex gap-4 items-start pl-1 md:w-[110%] lg:w-[115%]">
               <span className="material-symbols-outlined text-[#83daf2] text-2xl rotate-180 transform scale-y-[-1] mt-1" style={{ fontVariationSettings: "'FILL' 1" }}>
                 format_quote
               </span>
               <p className="font-headline font-bold text-[18px] text-[#00105b] italic leading-relaxed pt-1">
-                "Nơi âm thanh được truyền tải qua ánh mắt và đôi bàn tay."
+                "Nơi âm thanh được truyền tải qua ánh mắt và đôi tay."
               </p>
             </div>
           </div>
