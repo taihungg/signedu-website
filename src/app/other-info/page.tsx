@@ -143,12 +143,12 @@ export default function OtherInfoPage() {
         <div className="flex flex-wrap justify-center gap-6">
            {/* Starbucks */}
            <div className="w-48 bg-white border border-slate-100 rounded-[1.5rem] h-32 flex items-center justify-center p-6 hover:shadow-[0_15px_35px_rgba(0,16,91,0.06)] hover:border-[#00704A]/30 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
-              <img src="/other-info/sb.png" alt="Starbucks" className="h-20 w-auto object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
+              <img src="/other-info/sb.png" alt="Starbucks" className="h-20 w-auto object-contain group-hover:scale-105 transition-all duration-500" />
            </div>
 
            {/* Tokyo Life */}
            <div className="w-48 bg-white border border-slate-100 rounded-[1.5rem] h-32 flex items-center justify-center p-6 hover:shadow-[0_15px_35px_rgba(0,16,91,0.06)] hover:border-[#E60012]/30 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
-              <img src="/other-info/tokyo-life.png" alt="Tokyo Life" className="h-16 w-auto object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
+              <img src="/other-info/tokyo-life.png" alt="Tokyo Life" className="h-16 w-auto object-contain group-hover:scale-105 transition-all duration-500" />
            </div>
         </div>
       </section>
