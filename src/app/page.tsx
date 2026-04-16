@@ -109,50 +109,75 @@ export default function Home() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-32 px-8 bg-[#fde181]/40 rounded-[3rem] mx-4 transition-colors duration-500">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 space-y-4">
-            <h2 className="font-headline font-extrabold text-4xl text-on-surface">Tầm nhìn &amp; Sứ mệnh</h2>
-            <p className="text-on-surface-variant max-w-2xl mx-auto font-medium">
-              Kiến tạo tương lai công nghệ hỗ trợ vì cộng đồng bền vững.
-            </p>
+      <section className="py-24 px-4 md:px-8 bg-gradient-to-br from-[#fde181]/50 to-[#f1d577]/40 transition-colors duration-500">
+        <div className="max-w-[76rem] mx-auto grid lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-16 items-center">
+          
+          {/* Left: 16:9 Video Player */}
+          <div className="relative aspect-video w-full rounded-[2.5rem] overflow-hidden shadow-2xl shadow-[#3D4DA3]/10 bg-[#00105b] order-2 lg:order-1">
+            <video 
+              autoPlay 
+              muted 
+              loop 
+              controls
+              controlsList="nodownload"
+              playsInline
+              className="w-full h-full object-cover opacity-90 transition-opacity hover:opacity-100 duration-500"
+            >
+              <source src="/videos/vision_mission.mp4" type="video/mp4" />
+            </video>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Vision Text Block */}
-            <div className="bg-surface-container-lowest/80 backdrop-blur-sm p-10 rounded-[2rem] space-y-4 border border-[#00105b]/5">
-              <div className="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center text-primary mb-2">
-                <span className="material-symbols-outlined text-2xl">visibility</span>
+
+          {/* Right: Content */}
+          <div className="space-y-10 order-1 lg:order-2 px-2 lg:px-0">
+            <h2 className="font-headline font-extrabold text-[42px] leading-tight text-[#00105b] max-w-[20ch]">
+              Tầm nhìn & Sứ mệnh
+            </h2>
+            
+            <div className="space-y-8">
+              {/* Vision Item */}
+              <div className="flex gap-5 items-start">
+                <div className="flex-shrink-0 w-[52px] h-[52px] bg-white rounded-2xl flex items-center justify-center text-[#83daf2] shadow-sm">
+                  <span className="material-symbols-outlined text-[28px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                    visibility
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-headline font-bold text-xl text-[#00105b]">Tầm nhìn</h3>
+                  <p className="text-on-surface-variant text-[15.5px] leading-relaxed mt-2 text-justify">
+                    Tầm nhìn của SignEdu là trở thành doanh nghiệp xã hội hàng đầu tại Việt Nam trong lĩnh vực cung cấp giải pháp hòa nhập cho người Điếc, đưa hòa nhập từ một giá trị xã hội trở thành năng lực phát triển của giáo dục, doanh nghiệp và cộng đồng.
+                  </p>
+                </div>
               </div>
-              <h3 className="font-headline font-bold text-2xl text-on-surface">Tầm nhìn</h3>
-              <p className="text-on-surface-variant leading-relaxed">
-                Tầm nhìn của SignEdu là trở thành doanh nghiệp xã hội hàng đầu tại Việt Nam trong lĩnh vực cung cấp giải pháp hòa nhập cho người Điếc, đưa hòa nhập từ một giá trị xã hội trở thành năng lực phát triển của giáo dục, doanh nghiệp và cộng đồng.
+
+              {/* Mission Item */}
+              <div className="flex gap-5 items-start">
+                <div className="flex-shrink-0 w-[52px] h-[52px] bg-white rounded-2xl flex items-center justify-center text-[#83daf2] shadow-sm">
+                  <span className="material-symbols-outlined text-[28px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                    rocket_launch
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-headline font-bold text-xl text-[#00105b]">Sứ mệnh</h3>
+                  <p className="text-on-surface-variant text-[15.5px] leading-relaxed mt-2 text-justify">
+                    Sứ mệnh của SignEdu là giải quyết khoảng trống về hòa nhập với người Điếc thông qua các giải pháp dành cho giáo dục, doanh nghiệp và cộng đồng. Chúng tôi đưa hòa nhập từ nhận thức thành hành động và giá trị bền vững.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr className="border-[#00105b]/15 rounded-full" />
+
+            {/* Quote Block */}
+            <div className="flex gap-4 items-start pl-1">
+              <span className="material-symbols-outlined text-[#83daf2] text-2xl rotate-180 transform scale-y-[-1] mt-1" style={{ fontVariationSettings: "'FILL' 1" }}>
+                format_quote
+              </span>
+              <p className="font-headline font-bold text-[18px] text-[#00105b] italic leading-relaxed pt-1">
+                "Nơi âm thanh được truyền tải qua ánh mắt và đôi bàn tay."
               </p>
             </div>
-            {/* Mission Text Block */}
-            <div className="bg-surface-container-lowest/80 backdrop-blur-sm p-10 rounded-[2rem] space-y-4 border border-[#00105b]/5">
-              <div className="w-12 h-12 bg-tertiary-container rounded-xl flex items-center justify-center text-tertiary mb-2">
-                <span className="material-symbols-outlined text-2xl">flag</span>
-              </div>
-              <h3 className="font-headline font-bold text-2xl text-on-surface">Sứ mệnh</h3>
-              <p className="text-on-surface-variant leading-relaxed">
-                Sứ mệnh của SignEdu là giải quyết khoảng trống về hòa nhập với người Điếc thông qua các giải pháp dành cho giáo dục, doanh nghiệp và cộng đồng. Chúng tôi đưa hòa nhập từ nhận thức thành hành động và giá trị bền vững.
-              </p>
-            </div>
           </div>
-          <div className="relative aspect-video max-w-4xl mx-auto rounded-[2.5rem] overflow-hidden group cursor-pointer shadow-2xl border-8 border-surface-container-lowest/30">
-            <img
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              alt="diverse team collaborating"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVa5CJHTy9xhsOOrCl_Li8OaYDt9HjsbJdPQyThVUiMZs2UrD09zD23JfxW61EJVIjC9bN2XFqz7ridfmBYTyvQQWHZVF5Jg66DIlKLVufzAZARbu8hyiDoLV6Gg9GXvqutCfLHGl0iP7fYHb93MYpLTFWz3o5L8juONXUpeMh8-Z8lDx9C_qcTgNohchlCv7eVT5VLUPQqiFEE6101WHBcM7yhIP8G946kCOR_nk6RzPp6uAWgA2PXmwGqxB2ja8F6DKkp47N0mE"
-            />
-            <div className="absolute inset-0 bg-on-surface/30 flex items-center justify-center group-hover:bg-on-surface/20 transition-colors">
-              <div className="w-20 h-20 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-2xl transition-transform group-hover:scale-110">
-                <span className="material-symbols-outlined text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>
-                  play_arrow
-                </span>
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
 
