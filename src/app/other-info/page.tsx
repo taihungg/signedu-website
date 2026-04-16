@@ -11,14 +11,14 @@ export default function OtherInfoPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 max-w-7xl mx-auto w-full text-center">
         <div className="max-w-4xl mx-auto space-y-4">
-          <span className="inline-block px-4 py-1.5 bg-[#83daf2]/10 text-[#83daf2] border border-[#83daf2]/20 rounded-full text-xs font-bold tracking-widest uppercase mb-2">
+          <span className="inline-block px-5 py-2 bg-[#83daf2]/10 text-[#83daf2] border border-[#83daf2]/20 rounded-full text-sm font-bold tracking-widest uppercase mb-4">
             HỆ SINH THÁI HÒA NHẬP
           </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-[50px] font-headline font-extrabold text-[#00105b] leading-[1.2]">
+          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-headline font-extrabold text-[#00105b] leading-[1.3]">
             Kết nối các nguồn lực <br className="hidden md:block" />
             <span className="text-[#83daf2]">phát triển cộng đồng</span>
           </h1>
-          <p className="text-slate-600 md:text-lg leading-relaxed max-w-3xl mx-auto pt-2 font-sans">
+          <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto pt-4 font-sans">
             Khám phá mạng lưới các tổ chức xã hội, doanh nghiệp và hội nhóm đang ngày đêm kiến tạo một môi trường sống công bằng và không rào cản cho Người Điếc tại Việt Nam.
           </p>
         </div>

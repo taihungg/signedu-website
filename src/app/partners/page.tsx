@@ -48,17 +48,17 @@ export default function PartnersPage() {
       <MarqueeStyles />
       {/* Hero Section */}
       <section className="pt-32 pb-6 px-8 max-w-7xl mx-auto w-full text-center">
-        <div className="max-w-4xl mx-auto space-y">
+        <div className="max-w-4xl mx-auto space-y-4">
           <span className="inline-block px-5 py-2 bg-[#83daf2]/10 text-[#83daf2] border border-[#83daf2]/20 rounded-full text-sm font-bold tracking-widest uppercase mb-4">
             Cộng đồng hòa nhập
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-[#00105b] tracking-tight leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-headline font-extrabold text-[#00105b] leading-[1.3]">
             Đồng hành cùng những <br className="hidden md:block" />
-            <span className="text-[#83daf2] italic">đối tác tiên phong</span>
+            <span className="text-[#83daf2]">đối tác tiên phong</span>
           </h1>
-          <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto pt-4">
-             Sự tham gia và hỗ trợ từ các doanh nghiệp, nhà trường và tố chức xã hội là động lực to lớn<br />
-             giúp SignEdu kiến tạo một môi trường phát triển bao trùm, không rào cản<br />
+          <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto pt-4 font-sans">
+             Sự tham gia và hỗ trợ từ các doanh nghiệp, nhà trường và tố chức xã hội là động lực to lớn<br className="hidden md:block" />
+             giúp SignEdu kiến tạo một môi trường phát triển bao trùm, không rào cản<br className="hidden md:block" />
              cho cộng đồng người Điếc và người khiếm thính.
           </p>
         </div>

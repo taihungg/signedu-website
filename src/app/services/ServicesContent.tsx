@@ -9,7 +9,7 @@ const services = [
     id: "training",
     title: "Chương trình đào tạo và trải nghiệm",
     shortDesc: "Tổ chức các chương trình trải nghiệm Ngôn ngữ ký hiệu, giáo dục nhận thức và kỹ năng giao tiếp hoà nhập.",
-    image: "/images/ws1.JPG",
+    image: "/services/sv1.JPG",
     highlights: [
       "Trải nghiệm thực tế về Ngôn ngữ ký hiệu",
       "Thay đổi nhận thức và thái độ",
