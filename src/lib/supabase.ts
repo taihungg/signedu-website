@@ -1,8 +1,15 @@
 import { createClient } from "@supabase/supabase-js";
 
-// Provide type defaults for missing environment variables so the build does not immediately crash, 
-// though the user will be alerted they need to configure them.
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder-url.supabase.co";
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-anon-key";
+const rawUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder-url.supabase.co";
+const rawKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-anon-key";
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// Defensively clean the variables just in case they carry string-literal quotes or "undefined"
+const cleanUrl = rawUrl.replace(/^["']|["']$/g, '').trim();
+const cleanKey = rawKey.replace(/^["']|["']$/g, '').trim();
+
+// Ensure the URL is valid HTTP/HTTPS to prevent build-time crashes during SSR
+const validUrl = cleanUrl === "undefined" || !cleanUrl.startsWith("http") 
+  ? "https://placeholder-url.supabase.co" 
+  : cleanUrl;
+
+export const supabase = createClient(validUrl, cleanKey);
