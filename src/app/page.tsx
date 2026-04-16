@@ -114,18 +114,15 @@ export default function Home() {
         <div className="max-w-[76rem] mx-auto grid lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-16 items-center">
           
           {/* Left: 16:9 Video Player */}
-          <div className="relative aspect-video w-full rounded-[2.5rem] overflow-hidden shadow-2xl shadow-[#3D4DA3]/10 bg-[#00105b] order-2 lg:order-1">
-            <video 
-              autoPlay 
-              muted 
-              loop 
-              controls
-              controlsList="nodownload"
-              playsInline
-              className="w-full h-full object-cover opacity-90 transition-opacity hover:opacity-100 duration-500"
-            >
-              <source src="/videos/vision_mission.mp4" type="video/mp4" />
-            </video>
+          <div className="relative aspect-video w-full rounded-[2.5rem] overflow-hidden shadow-2xl shadow-[#3D4DA3]/10 bg-[#00105b] order-2 lg:order-1 focus-within:ring-4 focus-within:ring-[#83daf2]/50">
+            <iframe 
+              src="https://www.youtube.com/embed/bdFh1CqFvFk?autoplay=1&mute=1&loop=1&playlist=bdFh1CqFvFk&controls=1&rel=0" 
+              title="SignEdu Vision and Mission" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full border-0 opacity-90 transition-opacity hover:opacity-100 duration-500"
+            ></iframe>
           </div>
 
           {/* Right: Content */}
