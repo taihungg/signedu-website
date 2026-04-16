@@ -2,84 +2,63 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f4f2ff] w-full rounded-t-[1.5rem] mt-auto">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-20 font-body text-sm leading-relaxed">
-        <div className="space-y-6">
-          <div className="text-xl font-bold text-[#00105b]">SignEdu</div>
-          <p className="text-[#00105b]/70">
-            Nền tảng công nghệ hỗ trợ người Khiếm thính hàng đầu tại Việt Nam.
-          </p>
-          <div className="flex gap-4">
-            <span className="material-symbols-outlined text-primary cursor-pointer hover:opacity-80">
-              public
-            </span>
-            <span className="material-symbols-outlined text-primary cursor-pointer hover:opacity-80">
-              mail
-            </span>
-            <span className="material-symbols-outlined text-primary cursor-pointer hover:opacity-80">
-              call
-            </span>
+    <footer className="bg-white pt-16 md:pt-10 pb-8 mt-auto border-t border-slate-100">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
+        
+        <div className="flex flex-col md:flex-row items-center md:items-center justify-between gap-12 mb-16">
+          
+          {/* Brand Block */}
+          <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4 max-w-sm">
+            <Link href="/" className="inline-block transition-transform hover:scale-105 duration-300">
+              <img src="/images/logo.png" alt="SignEdu Logo" className="h-30 w-auto object-contain" />
+            </Link>
+            <p className="text-[#00105b]/80 font-medium text-lg italic pr-4">
+              "Vì một Việt Nam hòa nhập không rào cản"
+            </p>
+          </div>
+
+          {/* Contact Info & Social */}
+          <div className="flex flex-col sm:flex-row items-center md:items-start gap-10 sm:gap-16">
+            
+            {/* Contact Group */}
+            <div className="flex flex-col gap-5 text-[#00105b]/85 font-medium">
+              <a href="mailto:signedu2025@gmail.com" className="flex items-center gap-3 hover:text-[#83daf2] transition-colors group">
+                <span className="material-symbols-outlined text-[#3D4DA3] bg-[#f4f2ff] p-2.5 rounded-2xl group-hover:bg-[#83daf2] group-hover:text-white transition-all duration-300 shadow-sm group-hover:shadow-md group-hover:-translate-y-0.5">mail</span>
+                signedu2025@gmail.com
+              </a>
+              <a href="tel:+84348325101" className="flex items-center gap-3 hover:text-[#83daf2] transition-colors group">
+                <span className="material-symbols-outlined text-[#3D4DA3] bg-[#f4f2ff] p-2.5 rounded-2xl group-hover:bg-[#83daf2] group-hover:text-white transition-all duration-300 shadow-sm group-hover:shadow-md group-hover:-translate-y-0.5">call</span>
+                (+84) 348 325 101
+              </a>
+            </div>
+
+            {/* Social Block */}
+            <div className="flex flex-col items-center sm:items-start gap-5 text-[#00105b]/85 font-medium">
+              <span className="opacity-50 text-xs uppercase tracking-widest font-extrabold mt-1">Theo dõi chúng tôi</span>
+              <a href="https://www.facebook.com/profile.php?id=61580129730953" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-[#3b5998] transition-colors group">
+                <div className="text-[#3D4DA3] bg-[#f4f2ff] p-2.5 rounded-2xl group-hover:bg-[#3b5998] group-hover:text-white transition-all duration-300 shadow-sm group-hover:shadow-md group-hover:-translate-y-0.5 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+                </div>
+                SignEdu - Ký hiệu kết nối
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Divider */}
+        <hr className="border-t border-slate-200 mb-8" />
+
+        {/* Bottom */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-[13px] text-[#00105b]/50">
+          <p>© 2025 SignEdu. All rights reserved. Tactile Clarity for the Deaf Community.</p>
+          <div className="flex gap-6 font-medium">
+            <Link href="#" className="hover:text-[#83daf2] hover:underline transition-all">Chính sách bảo mật</Link>
+            <Link href="#" className="hover:text-[#83daf2] hover:underline transition-all">Điều khoản sử dụng</Link>
           </div>
         </div>
-        <div className="space-y-6">
-          <h4 className="font-bold text-[#00105b]">Về chúng tôi</h4>
-          <ul className="space-y-3">
-            <li>
-              <Link href="#" className="text-[#00105b]/70 hover:text-[#83daf2] transition-colors">
-                Câu chuyện thương hiệu
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="text-[#00105b]/70 hover:text-[#83daf2] transition-colors">
-                Đội ngũ sáng lập
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="text-[#00105b]/70 hover:text-[#83daf2] transition-colors">
-                Báo chí &amp; Truyền thông
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="space-y-6">
-          <h4 className="font-bold text-[#00105b]">Hỗ trợ</h4>
-          <ul className="space-y-3">
-            <li>
-              <Link href="#" className="text-[#00105b]/70 hover:text-[#83daf2] transition-colors">
-                Trung tâm trợ giúp
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="text-[#00105b]/70 hover:text-[#83daf2] transition-colors">
-                Chính sách bảo mật
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="text-[#00105b]/70 hover:text-[#83daf2] transition-colors">
-                Điều khoản sử dụng
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="space-y-6">
-          <h4 className="font-bold text-[#00105b]">Bản tin</h4>
-          <p className="text-[#00105b]/70">
-            Đăng ký để nhận thông tin mới nhất về các hoạt động cộng đồng.
-          </p>
-          <div className="flex gap-2">
-            <input
-              type="email"
-              placeholder="Email của bạn"
-              className="bg-surface-container-highest border-none rounded-full px-4 py-2 w-full focus:ring-2 focus:ring-primary/40 text-on-surface"
-            />
-            <button className="bg-primary text-on-primary p-2 rounded-full flex items-center justify-center hover:opacity-90 transition-all">
-              <span className="material-symbols-outlined text-sm">send</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div className="max-w-7xl mx-auto px-8 py-8 border-t border-on-surface/5 text-center text-[#00105b]/50">
-        © 2024 SignEdu. All rights reserved. Tactile Clarity for the Deaf Community.
+
       </div>
     </footer>
   );
