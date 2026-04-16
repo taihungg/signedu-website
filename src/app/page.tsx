@@ -1,4 +1,5 @@
 import FaqAccordion from "@/components/FaqAccordion";
+import ImageGallery from "@/components/ImageGallery";
 import Link from "next/link";
 
 export default function Home() {
@@ -181,91 +182,223 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Highlight Activities */}
-      <section className="py-32 px-8 bg-surface">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-            <div className="space-y-4">
-              <h2 className="font-headline font-extrabold text-4xl">Hoạt động nổi bật</h2>
-              <p className="text-on-surface-variant">Những dấu ấn SignEdu đã để lại trên hành trình kết nối.</p>
-            </div>
-            <div className="flex gap-4 items-center">
-              <span className="text-sm font-bold text-on-surface-variant uppercase tracking-wider">
-                Báo chí nói về chúng tôi
-              </span>
-              <div className="flex gap-6 opacity-60">
-                <img
-                  className="h-8 grayscale"
-                  alt="news outlet logo"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCycZKDo2iy_gTijEtPcgNkboltipX3U1iRs1kzegKV84nNYV6_zMKQ_AI_SPV02jaMKBzntEszD2YszkrPXVxAFMBkOLBeoxW2bTrGbrSYVhlxKvTZqi30v3WFOksnaByBb928MlCz_xD1il_2U91WLpBLTuMNoCW0wg8af94m3oDMOUDuXaf8NsFVH6G0-75eQqy-9W4jidFT79qUBNmZUBEToHG4QlfU58Kv3Sqv9qcpavieOfFFxT5_C8zN72xs_ZOX8xtgcDk"
-                />
-                <img
-                  className="h-8 grayscale"
-                  alt="tech journal logo"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoptvRLVuaYFcHoSvJxUPPk6khyacRfOZEK-Ul67w2kwVE6gDubtvslPoaIo1VjzZjCc5BS2p9zSBbWDQWP15EkewSOue61VIIiRSOr-98O5g39CsctX9Z66f3GsKlIarH1CNMTKvw11JH62PF_0GQt61QCHTk4jcwLV-WjpKiAh7F9UA0R4eh_ui2Upmd7hH2ZafLEpTgp9V9TB_Q0qBv4M4OEzIo2Q8bcg6NYfZihhPJ0Q6oaHzH-JfQY6cOzPrsPh6ah3FVMBU"
-                />
-              </div>
-            </div>
+      {/* Activities & Impact Layer */}
+      <section className="py-24 md:py-32 px-4 md:px-8 bg-slate-50 relative overflow-hidden">
+        <div className="max-w-[78rem] mx-auto space-y-10 md:space-y-14 relative z-10">
+          
+          {/* Section Header */}
+          <div className="text-center space-y-6 max-w-3xl mx-auto">
+            <h2 className="font-headline font-extrabold text-[36px] md:text-[44px] text-[#00105b] leading-tight">
+              Dấu ấn từ những bước đầu tiên
+            </h2>
+            <p className="text-lg md:text-xl text-on-surface-variant leading-relaxed">
+              Dù mới bắt đầu, SignEdu đã tạo ra những tác động tích cực và nhận được sự ghi nhận từ cộng đồng.
+            </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Activity Card 1 */}
-            <div className="bg-surface-container-lowest rounded-[1.5rem] overflow-hidden hover:shadow-2xl transition-all duration-500 group border border-outline-variant/10">
-              <div className="h-64 overflow-hidden">
-                <img
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  alt="hands communicating"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkRGxjLmH5W5eZhFZ4LSq6wpHDixejulT5KyhKzawfTcHLZKhr_N9j2nqhu7iBz_E2zTLFE08Q5NZlE95uFgsCan-BGAVJw_C7JMyWlrVkvozWuO1RzYylA70fAzVLgyY99KyXGSqHBqZAukiIhr_ZkeEVTPl7xmU1OdAtqIAGNd1hATxUijfWGqffye1mZ7AYK0o3UoFkTG69czEioHu3HCljKNB1jHYciu9fQ4WOd1mC481xBCyE4QnPun1LmG97TZZqIjnzqIo"
-                />
-              </div>
-              <div className="p-8 space-y-4">
-                <div className="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-xs font-bold rounded-full">
-                  GIÁO DỤC
+
+          {/* Activity Cards Grid */}
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-stretch">
+            
+            {/* Card 1 - Workshop */}
+            <div className="group bg-white rounded-[2rem] shadow-[0_8px_30px_rgba(0,16,91,0.04)] hover:shadow-[0_24px_50px_rgba(0,16,91,0.08)] hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 overflow-hidden flex flex-col border border-slate-100">
+              <ImageGallery 
+                images={[
+                  "https://lh3.googleusercontent.com/aida-public/AB6AXuAkRGxjLmH5W5eZhFZ4LSq6wpHDixejulT5KyhKzawfTcHLZKhr_N9j2nqhu7iBz_E2zTLFE08Q5NZlE95uFgsCan-BGAVJw_C7JMyWlrVkvozWuO1RzYylA70fAzVLgyY99KyXGSqHBqZAukiIhr_ZkeEVTPl7xmU1OdAtqIAGNd1hATxUijfWGqffye1mZ7AYK0o3UoFkTG69czEioHu3HCljKNB1jHYciu9fQ4WOd1mC481xBCyE4QnPun1LmG97TZZqIjnzqIo",
+                  "https://lh3.googleusercontent.com/aida-public/AB6AXuCFWfU5gEfFHCQ9Zzi2UIwL-owDBzS0WRFqumQmlri_a52TBoyFS27617TVp7CMF2Bw6ry35_3CBHb1kAStn9zigyXmisLzSSDcw8J6hyyH8BXN5ETUSb5EkElOLn-qA7xKR9m7auYOJX6DAAqsNgcdctCqV-iD_b6EEXzFSLedmOnD8a9Vv36U5xxWWYGAGHmFdp7qxDjRTIbfeBEutLik5pSy3WPshRnW2i6i97pQNnBaKxe9QHzuc-8uTdzwGD-wG0iiXc_omFs",
+                  "https://lh3.googleusercontent.com/aida-public/AB6AXuD_sWKLHzKxUbUPtchwfHgCDcRz4wXJxaSTZyOueGXi3-Ixif98wEO9mM_qhuvbGGsfC895hgg7YdAK07diZI2uYwXyKV0_VsKRBZZ3Du7Oe9XLMurCrBPuujg5g2WM9Xns0COTbWCcjNsHZsWvCU5TVKpY1wp253zkIHjVI4JV3CQ73e187EOiZz4gxAqHmxvkj-pVuKDoG6kop-xzpKmuyzYijfjghwVD2QqaoNJgOGejQsVn7VIF44u31g6INvtvtYy_YVkU7dM"
+                ]}
+                badge={
+                  <span className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#f1d577] text-[#3D4DA3] text-xs font-black uppercase tracking-wider rounded-xl shadow-lg border border-white/40">
+                    <span className="material-symbols-outlined text-[16px]">newspaper</span>
+                    Được báo chí đưa tin
+                  </span>
+                }
+              />
+              <div className="p-8 md:p-10 flex flex-col flex-grow space-y-8">
+                <div className="space-y-4">
+                  <h3 className="font-headline font-bold text-2xl text-[#00105b] group-hover:text-[#3D4DA3] transition-colors duration-300">Workshop về hòa nhập cho người Điếc</h3>
+                  <p className="text-on-surface-variant line-clamp-2 leading-relaxed text-[15px]">
+                    Sự kiện đầu tiên đánh dấu bước tiến trong việc nâng cao kỹ năng giao tiếp cơ bản và lan tỏa văn hóa hòa nhập.
+                  </p>
                 </div>
-                <h4 className="font-headline font-bold text-xl">Dự án "Chữ ký yêu thương"</h4>
-                <p className="text-on-surface-variant text-sm line-clamp-2">
-                  Chuỗi workshop giảng dạy ngôn ngữ ký hiệu cơ bản cho hơn 500 sinh viên tại TP.HCM.
-                </p>
+                
+                {/* Metrics Grid */}
+                <div className="grid grid-cols-2 gap-4 mt-auto">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#3D4DA3]/5 flex items-center justify-center text-[#3D4DA3]">
+                      <span className="material-symbols-outlined text-[20px]">group</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-[#3D4DA3] text-[17px] leading-none">42</p>
+                      <p className="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1.5">Tham gia</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#3D4DA3]/5 flex items-center justify-center text-[#3D4DA3]">
+                      <span className="material-symbols-outlined text-[20px]">touch_app</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-[#3D4DA3] text-[17px] leading-none">41K+</p>
+                      <p className="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1.5">Tương tác</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#3D4DA3]/5 flex items-center justify-center text-[#3D4DA3]">
+                      <span className="material-symbols-outlined text-[20px]">person_add</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-[#3D4DA3] text-[17px] leading-none">65%</p>
+                      <p className="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1.5">Chưa theo dõi</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#3D4DA3]/5 flex items-center justify-center text-[#3D4DA3]">
+                      <span className="material-symbols-outlined text-[20px]">handshake</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-[#3D4DA3] text-[17px] leading-none">1</p>
+                      <p className="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1.5">Đối tác</p>
+                    </div>
+                  </div>
+                  <div className="col-span-2 flex items-center gap-3 bg-[#e8f6ed] p-3.5 rounded-xl border border-[#c4ead1] mt-2">
+                    <div className="w-8 h-8 rounded-full bg-[#c4ead1] flex items-center justify-center text-[#1e6938]">
+                      <span className="material-symbols-outlined text-[18px]">sentiment_very_satisfied</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-[#1e6938] text-sm leading-none">99% Phản hồi tích cực</p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
-            {/* Activity Card 2 */}
-            <div className="bg-surface-container-lowest rounded-[1.5rem] overflow-hidden hover:shadow-2xl transition-all duration-500 group border border-outline-variant/10">
-              <div className="h-64 overflow-hidden">
-                <img
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  alt="tech professionals"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFWfU5gEfFHCQ9Zzi2UIwL-owDBzS0WRFqumQmlri_a52TBoyFS27617TVp7CMF2Bw6ry35_3CBHb1kAStn9zigyXmisLzSSDcw8J6hyyH8BXN5ETUSb5EkElOLn-qA7xKR9m7auYOJX6DAAqsNgcdctCqV-iD_b6EEXzFSLedmOnD8a9Vv36U5xxWWYGAGHmFdp7qxDjRTIbfeBEutLik5pSy3WPshRnW2i6i97pQNnBaKxe9QHzuc-8uTdzwGD-wG0iiXc_omFs"
-                />
-              </div>
-              <div className="p-8 space-y-4">
-                <div className="inline-block px-3 py-1 bg-primary-container text-on-primary-container text-xs font-bold rounded-full">
-                  CÔNG NGHỆ
+
+            {/* Card 2 - Talkshow */}
+            <div className="group bg-white rounded-[2rem] shadow-[0_8px_30px_rgba(0,16,91,0.04)] hover:shadow-[0_24px_50px_rgba(0,16,91,0.08)] hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 overflow-hidden flex flex-col border border-slate-100">
+              <ImageGallery 
+                images={[
+                  "https://lh3.googleusercontent.com/aida-public/AB6AXuCFWfU5gEfFHCQ9Zzi2UIwL-owDBzS0WRFqumQmlri_a52TBoyFS27617TVp7CMF2Bw6ry35_3CBHb1kAStn9zigyXmisLzSSDcw8J6hyyH8BXN5ETUSb5EkElOLn-qA7xKR9m7auYOJX6DAAqsNgcdctCqV-iD_b6EEXzFSLedmOnD8a9Vv36U5xxWWYGAGHmFdp7qxDjRTIbfeBEutLik5pSy3WPshRnW2i6i97pQNnBaKxe9QHzuc-8uTdzwGD-wG0iiXc_omFs",
+                  "https://lh3.googleusercontent.com/aida-public/AB6AXuAkRGxjLmH5W5eZhFZ4LSq6wpHDixejulT5KyhKzawfTcHLZKhr_N9j2nqhu7iBz_E2zTLFE08Q5NZlE95uFgsCan-BGAVJw_C7JMyWlrVkvozWuO1RzYylA70fAzVLgyY99KyXGSqHBqZAukiIhr_ZkeEVTPl7xmU1OdAtqIAGNd1hATxUijfWGqffye1mZ7AYK0o3UoFkTG69czEioHu3HCljKNB1jHYciu9fQ4WOd1mC481xBCyE4QnPun1LmG97TZZqIjnzqIo",
+                  "https://lh3.googleusercontent.com/aida-public/AB6AXuD_sWKLHzKxUbUPtchwfHgCDcRz4wXJxaSTZyOueGXi3-Ixif98wEO9mM_qhuvbGGsfC895hgg7YdAK07diZI2uYwXyKV0_VsKRBZZ3Du7Oe9XLMurCrBPuujg5g2WM9Xns0COTbWCcjNsHZsWvCU5TVKpY1wp253zkIHjVI4JV3CQ73e187EOiZz4gxAqHmxvkj-pVuKDoG6kop-xzpKmuyzYijfjghwVD2QqaoNJgOGejQsVn7VIF44u31g6INvtvtYy_YVkU7dM"
+                ]}
+                badge={
+                  <span className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#e8f6ed] text-[#1e6938] text-xs font-black uppercase tracking-wider rounded-xl shadow-lg border border-white/40">
+                    <span className="material-symbols-outlined text-[16px]">stars</span>
+                    Phản hồi tích cực
+                  </span>
+                }
+              />
+              <div className="p-8 md:p-10 flex flex-col flex-grow space-y-8">
+                <div className="space-y-4">
+                  <h3 className="font-headline font-bold text-2xl text-[#00105b] group-hover:text-[#3D4DA3] transition-colors duration-300">Talkshow về giao tiếp không rào cản</h3>
+                  <p className="text-on-surface-variant line-clamp-2 leading-relaxed text-[15px]">
+                    Thảo luận chuyên sâu về các rào cản vô hình và giải pháp công nghệ kết nối hiện đại cùng các chuyên gia hàng đầu.
+                  </p>
                 </div>
-                <h4 className="font-headline font-bold text-xl">Ra mắt AI Sign-Translator 2.0</h4>
-                <p className="text-on-surface-variant text-sm line-clamp-2">
-                  Nâng cấp thuật toán nhận diện cử chỉ với độ chính xác lên đến 98% trong thời gian thực.
-                </p>
+                
+                {/* Metrics Grid */}
+                <div className="grid grid-cols-2 gap-4 mt-auto">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#3D4DA3]/5 flex items-center justify-center text-[#3D4DA3]">
+                      <span className="material-symbols-outlined text-[20px]">group</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-[#3D4DA3] text-[17px] leading-none">63</p>
+                      <p className="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1.5">Tham gia</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#3D4DA3]/5 flex items-center justify-center text-[#3D4DA3]">
+                      <span className="material-symbols-outlined text-[20px]">touch_app</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-[#3D4DA3] text-[17px] leading-none">54K+</p>
+                      <p className="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1.5">Tương tác</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#3D4DA3]/5 flex items-center justify-center text-[#3D4DA3]">
+                      <span className="material-symbols-outlined text-[20px]">person_add</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-[#3D4DA3] text-[17px] leading-none">74%</p>
+                      <p className="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1.5">Chưa theo dõi</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#3D4DA3]/5 flex items-center justify-center text-[#3D4DA3]">
+                      <span className="material-symbols-outlined text-[20px]">handshake</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-[#3D4DA3] text-[17px] leading-none">8</p>
+                      <p className="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1.5">Đối tác</p>
+                    </div>
+                  </div>
+                  <div className="col-span-2 flex items-center gap-3 bg-[#e8f6ed] p-3.5 rounded-xl border border-[#c4ead1] mt-2">
+                    <div className="w-8 h-8 rounded-full bg-[#c4ead1] flex items-center justify-center text-[#1e6938]">
+                      <span className="material-symbols-outlined text-[18px]">sentiment_very_satisfied</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-[#1e6938] text-sm leading-none">99% Phản hồi tích cực</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            {/* Activity Card 3 */}
-            <div className="bg-surface-container-lowest rounded-[1.5rem] overflow-hidden hover:shadow-2xl transition-all duration-500 group border border-outline-variant/10">
-              <div className="h-64 overflow-hidden">
-                <img
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  alt="happy crowd event"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_sWKLHzKxUbUPtchwfHgCDcRz4wXJxaSTZyOueGXi3-Ixif98wEO9mM_qhuvbGGsfC895hgg7YdAK07diZI2uYwXyKV0_VsKRBZZ3Du7Oe9XLMurCrBPuujg5g2WM9Xns0COTbWCcjNsHZsWvCU5TVKpY1wp253zkIHjVI4JV3CQ73e187EOiZz4gxAqHmxvkj-pVuKDoG6kop-xzpKmuyzYijfjghwVD2QqaoNJgOGejQsVn7VIF44u31g6INvtvtYy_YVkU7dM"
-                />
-              </div>
-              <div className="p-8 space-y-4">
-                <div className="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container text-xs font-bold rounded-full">
-                  CỘNG ĐỒNG
-                </div>
-                <h4 className="font-headline font-bold text-xl">Ngày hội Hòa nhập Toàn quốc</h4>
-                <p className="text-on-surface-variant text-sm line-clamp-2">
-                  Sự kiện quy mô lớn kết nối doanh nghiệp và ứng viên khiếm thính tài năng.
-                </p>
-              </div>
-            </div>
+            
           </div>
+
+          {/* Social Proof Layer: Testimonials & Media */}
+          <div className="grid lg:grid-cols-[1fr_1.5fr] gap-8">
+            
+            {/* Micro Social Proof Testimonial */}
+            <div className="bg-[#f1d577]/15 rounded-[2rem] p-8 md:p-10 border border-[#f1d577]/40 flex flex-col justify-center relative overflow-hidden group">
+              <span className="material-symbols-outlined absolute -top-4 -right-2 text-[#f1d577]/30 text-[180px] -rotate-12 select-none group-hover:scale-110 transition-transform duration-700">format_quote</span>
+              <div className="relative z-10">
+                <span className="material-symbols-outlined text-[#3D4DA3] text-5xl mb-4 opacity-40">format_quote</span>
+                <p className="font-headline italic text-[#00105b] text-xl leading-relaxed">
+                  "Workshop giúp chúng tôi hiểu rõ hơn về cách giao tiếp và hòa nhập với người Điếc."
+                </p>
+                <div className="mt-8 flex items-center gap-4">
+                  <div className="w-12 h-12 bg-white rounded-full overflow-hidden shadow-sm border border-slate-200 p-2 flex items-center justify-center">
+                     <span className="material-symbols-outlined text-slate-300">person</span>
+                  </div>
+                  <div>
+                    <p className="font-bold text-[15px] text-[#3D4DA3]">Khán giả tham dự</p>
+                    <p className="text-xs text-on-surface-variant font-medium mt-0.5">Sự kiện Workshop</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Media Mention Banner */}
+            <div className="bg-[#3D4DA3] rounded-[2rem] p-8 md:p-12 pl-8 md:pl-16 flex flex-col md:flex-row items-center gap-10 text-white overflow-hidden relative shadow-2xl shadow-[#3D4DA3]/20">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#83daf2]/30 to-transparent rounded-full blur-3xl translate-x-1/3 -translate-y-1/3"></div>
+              
+              <div className="flex-shrink-0 relative z-10">
+                <div className="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 shadow-inner group">
+                  <img
+                    className="h-10 md:h-12 w-auto grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 max-w-[140px] object-contain cursor-pointer"
+                    alt="Press Logo"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCycZKDo2iy_gTijEtPcgNkboltipX3U1iRs1kzegKV84nNYV6_zMKQ_AI_SPV02jaMKBzntEszD2YszkrPXVxAFMBkOLBeoxW2bTrGbrSYVhlxKvTZqi30v3WFOksnaByBb928MlCz_xD1il_2U91WLpBLTuMNoCW0wg8af94m3oDMOUDuXaf8NsFVH6G0-75eQqy-9W4jidFT79qUBNmZUBEToHG4QlfU58Kv3Sqv9qcpavieOfFFxT5_C8zN72xs_ZOX8xtgcDk"
+                  />
+                </div>
+              </div>
+              
+              <div className="flex-grow space-y-6 relative z-10 text-center md:text-left">
+                <p className="text-lg md:text-xl font-medium leading-relaxed italic text-white/95">
+                  "SignEdu mang đến một cách tiếp cận đột phá, biến hòa nhập thành hành động thực tiễn cho doanh nghiệp và giáo dục."
+                </p>
+                <div className="pt-2">
+                  <a href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-[#f1d577] text-[#3D4DA3] rounded-full font-black text-sm uppercase tracking-wider hover:bg-white transition-colors duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transform active:translate-y-0">
+                    Đọc bài viết <span className="material-symbols-outlined text-[18px]">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </section>
 
