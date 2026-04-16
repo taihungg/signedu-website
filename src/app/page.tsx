@@ -100,11 +100,6 @@ export default function Home() {
                 Hành trình này không chỉ của riêng SignEdu, mà gắn liền với sự phát triển và hòa nhập của xã hội. Những chuyển động của xã hội, từ nhu cầu hòa nhập trong giáo dục, dịch vụ đến môi trường làm việc, cũng là nền tảng để chúng tôi định hình cách phát triển và theo đuổi những đóng góp dài hạn cho cộng đồng người Điếc. Bởi với chúng tôi, hòa nhập là phát triển.
               </p>
             </div>
-            <div className="pt-4">
-              <a className="inline-flex items-center gap-2 text-primary font-bold hover:underline" href="#">
-                Tìm hiểu thêm về hành trình <span className="material-symbols-outlined">arrow_forward</span>
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -184,7 +179,7 @@ export default function Home() {
         <div className="max-w-[78rem] mx-auto space-y-10 md:space-y-14 relative z-10">
           
           {/* Section Header */}
-          <div className="text-center space-y-6 max-w-3xl mx-auto">
+          <div className="text-center space-y-6 max-w-5xl mx-auto">
             <h2 className="font-headline font-extrabold text-[36px] md:text-[44px] text-[#00105b] leading-tight">
               Dấu ấn từ những bước đầu tiên
             </h2>
