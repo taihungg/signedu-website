@@ -9,27 +9,22 @@ interface FaqItemProps {
 
 const faqs: FaqItemProps[] = [
   {
-    question: "Câu 1: SignEdu có phải tổ chức phi lợi nhuận không?",
-    answer:
-      "Không. SignEdu không phải là tổ chức phi lợi nhuận; SignEdu phát triển theo mô hình doanh nghiệp xã hội, vừa tạo tác động xã hội, vừa tạo doanh thu để duy trì và mở rộng giải pháp một cách bền vững.",
-  },
-  {
-    question: "Câu 2: SignEdu hỗ trợ doanh nghiệp triển khai CSR/DEI như thế nào?",
+    question: "Câu 1: SignEdu hỗ trợ doanh nghiệp triển khai CSR/DEI như thế nào?",
     answer:
       "SignEdu hỗ trợ doanh nghiệp triển khai CSR/DEI bằng cách biến cam kết hòa nhập thành những thay đổi cụ thể trong con người, dịch vụ và quy trình. Cụ thể, chúng tôi giúp doanh nghiệp đào tạo đội ngũ hiểu đúng về người Điếc và cách giao tiếp phù hợp; rà soát các điểm chạm dịch vụ để tăng khả năng tiếp cận cho khách hàng người Điếc; đồng thời hỗ trợ xây dựng môi trường làm việc cởi mở hơn nếu doanh nghiệp muốn tuyển dụng hoặc làm việc với người Điếc. Nhờ đó, ESG/DEI không chỉ dừng ở thông điệp truyền thông, mà trở thành năng lực phục vụ, năng lực vận hành và tác động cụ thể có thể đo lường.",
   },
   {
-    question: "Câu 3: Ai tham gia xây dựng nội dung và trực tiếp triển khai chương trình?",
+    question: "Câu 2: Ai tham gia xây dựng nội dung và trực tiếp triển khai chương trình?",
     answer:
       "Nội dung của SignEdu được xây dựng với sự tham gia của cộng đồng người Điếc nhằm bảo đảm tính chính xác, phù hợp và tôn trọng bản sắc văn hóa Điếc. Trong quá trình triển khai, chúng tôi kết hợp cùng các cộng sự người Điếc và những người có chuyên môn liên quan để mang đến trải nghiệm học tập chân thực, gần gũi và có giá trị thực tiễn.",
   },
   {
-    question: "Câu 4: Doanh nghiệp có thể yêu cầu thiết kế chương trình đào tạo riêng không?",
+    question: "Câu 3: Doanh nghiệp có thể yêu cầu thiết kế chương trình đào tạo riêng không?",
     answer:
       "Có. SignEdu sẵn sàng thiết kế chương trình đào tạo riêng cho từng doanh nghiệp dựa trên nhu cầu, đối tượng tham gia và mục tiêu triển khai cụ thể. Mỗi chương trình đều được điều chỉnh để phù hợp với bối cảnh vận hành thực tế, giúp doanh nghiệp nhận được giá trị thiết thực và tạo ra giá trị ứng dụng cao nhất.",
   },
   {
-    question: "Câu 5: Sau workshop, học sinh và sinh viên có thể được hỗ trợ thực hành ngôn ngữ ký hiệu ra sao?",
+    question: "Câu 4: Sau workshop, học sinh và sinh viên có thể được hỗ trợ thực hành ngôn ngữ ký hiệu ra sao?",
     answer:
       "Có. Sau workshop, học sinh và sinh viên có thể tiếp tục luyện tập trên website của SignEdu thông qua việc đọc các câu chuyện về người Điếc và học từ vựng ngôn ngữ ký hiệu ngay trong ngữ cảnh. Cách tiếp cận này giúp người học không chỉ ghi nhớ từ vựng tốt hơn, mà còn hiểu thêm về cộng đồng người Điếc.",
   },

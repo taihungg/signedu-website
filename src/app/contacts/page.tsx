@@ -60,7 +60,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-[#00105b] text-lg mb-1">Văn phòng</h3>
-                  <p className="text-slate-600 font-medium leading-relaxed">Tòa nhà ABC<br/>Học viện Báo chí và Tuyên truyền</p>
+                  <p className="text-slate-600 font-medium leading-relaxed">Tầng 9, Tòa nhà A1<br/>Học viện Báo chí và Tuyên truyền</p>
                 </div>
               </div>
 

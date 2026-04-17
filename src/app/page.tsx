@@ -1,5 +1,6 @@
 import FaqAccordion from "@/components/FaqAccordion";
 import ImageGallery from "@/components/ImageGallery";
+import YouTubeScrollPlayer from "@/components/YouTubeScrollPlayer";
 import Link from "next/link";
 
 export default function Home() {
@@ -62,47 +63,33 @@ export default function Home() {
       </section>
 
       {/* Story Section */}
-      <section className="py-30 px-8 bg-surface">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-[0.9fr_1.1fr] gap-14 lg:gap-16 items-center">
-          <div className="relative w-full">
-            <div className="grid grid-cols-12 grid-rows-12 gap-3 sm:gap-4 h-[30rem] md:h-[34rem] lg:h-[38rem]">
-              <div className="col-span-8 row-span-12 rounded-[1.75rem] overflow-hidden shadow-xl shadow-primary/10">
-                <img
-                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                  alt="people communicating through sign language"
-                  src="/images/8tt.jpg"
-                />
-              </div>
-              <div className="col-span-4 row-span-6 rounded-[1.25rem] overflow-hidden shadow-lg shadow-primary/10">
-                <img
-                  className="w-full h-full object-cover object-[62%_center] transition-transform duration-700 hover:scale-105"
-                  alt="close-up hands using sign language"
-                  src="/images/8tt.jpg"
-                />
-              </div>
-              <div className="col-span-4 row-span-6 rounded-[1.25rem] overflow-hidden shadow-lg shadow-primary/10">
-                <img
-                  className="w-full h-full object-cover object-[42%_center] transition-transform duration-700 hover:scale-105"
-                  alt="community learning sign language"
-                  src="/images/8tt.jpg"
-                />
-              </div>
-            </div>
-            <div className="absolute -bottom-6 -right-4 bg-tertiary-fixed p-7 rounded-2xl shadow-lg max-w-[220px]">
-              <p className="font-bold text-on-tertiary-fixed text-2xl">100,000+</p>
-              <p className="text-sm text-on-tertiary-fixed-variant">
-                Người khiếm thính được hỗ trợ tiếp cận giáo dục mỗi năm.
-              </p>
-            </div>
+      <section className="py-24 px-6 max-w-7xl mx-auto w-full">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Image Left */}
+          <div className="relative w-full rounded-[1.5rem] lg:rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,16,91,0.08)] group">
+            <img
+              className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+              alt="Về SignEdu"
+              src="/images/us.jpg"
+            />
           </div>
-          <div className="space-y-8">
-            <h2 className="font-headline font-extrabold text-4xl text-on-surface">Về chúng tôi</h2>
-            <div className="space-y-6 text-on-surface-variant text-lg leading-relaxed text-justify">
+          
+          {/* Content Right */}
+          <div className="space-y-6 md:space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-700">
+            <div className="space-y-4">
+              <span className="inline-block px-5 py-2 bg-[#83daf2]/10 text-[#83daf2] border border-[#83daf2]/20 rounded-full text-sm font-bold tracking-widest uppercase">
+                Về SignEdu
+              </span>
+              <h2 className="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-[#00105b] leading-[1.3] tracking-tight">
+                Chúng tôi kiến tạo một xã hội hòa nhập từ những điều nhỏ nhất
+              </h2>
+            </div>
+            <div className="space-y-6 text-slate-600 text-lg leading-relaxed font-sans">
               <p>
-                Mô hình SignEdu đi thẳng vào một khoảng trống còn bỏ ngỏ: năng lực hòa nhập với người Điếc trong giáo dục, dịch vụ và môi trường làm việc. Chúng tôi không nhìn người Điếc như đối tượng cần được hỗ trợ, mà là những cộng sự cùng thiết kế giải pháp, cùng tham gia kiến tạo nên những mô hình hòa nhập có tính ứng dụng thực tế. Với SignEdu, tác động xã hội không dừng ở những hoạt động nâng cao nhận thức đơn lẻ, mà được chuyển hóa thành hành động, thành năng lực vận hành và thành những thay đổi có thể đo lường trong nhà trường, tổ chức và cộng đồng; đó là sản phẩm cốt lõi, là giá trị tạo khác biệt và cũng là động lực tạo doanh thu bền vững. Đồng thời, chúng tôi theo đuổi một hướng đi rõ ràng: gắn giá trị xã hội với tính bền vững của mô hình, để hòa nhập không đứng ngoài phát triển, mà trở thành một phần của phát triển.
+                SignEdu lấp đầy khoảng trống hòa nhập cho người Điếc trong giáo dục và doanh nghiệp. Chúng tôi không chỉ hỗ trợ, mà cùng người Điếc đồng kiến tạo giải pháp. Tại đây, nhận thức được chuyển hóa thành năng lực vận hành thực tế và những thay đổi đo lường được.
               </p>
               <p>
-                Hành trình này không chỉ của riêng SignEdu, mà gắn liền với sự phát triển và hòa nhập của xã hội. Những chuyển động của xã hội, từ nhu cầu hòa nhập trong giáo dục, dịch vụ đến môi trường làm việc, cũng là nền tảng để chúng tôi định hình cách phát triển và theo đuổi những đóng góp dài hạn cho cộng đồng người Điếc. Bởi với chúng tôi, hòa nhập là phát triển.
+                Chúng tôi tin rằng giá trị xã hội và doanh thu bền vững luôn song hành, bởi với SignEdu: Hòa nhập chính là phát triển.
               </p>
             </div>
           </div>
@@ -114,16 +101,7 @@ export default function Home() {
         <div className="max-w-[76rem] mx-auto grid lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-16 items-center">
 
           {/* Left: 16:9 Video Player */}
-          <div className="relative aspect-video w-full rounded-[2.5rem] overflow-hidden shadow-2xl shadow-[#3D4DA3]/10 bg-[#00105b] order-2 lg:order-1 focus-within:ring-4 focus-within:ring-[#83daf2]/50">
-            <iframe
-              src="https://www.youtube.com/embed/bdFh1CqFvFk?autoplay=1&mute=1&loop=1&playlist=bdFh1CqFvFk&controls=1&rel=0"
-              title="SignEdu Vision and Mission"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              className="absolute top-0 left-0 w-full h-full border-0 opacity-90 transition-opacity hover:opacity-100 duration-500"
-            ></iframe>
-          </div>
+          <YouTubeScrollPlayer videoId="Nc7e7eM-EHU" />
 
           {/* Right: Content */}
           <div className="space-y-10 order-1 lg:order-2 px-2 lg:px-0">
@@ -354,11 +332,11 @@ export default function Home() {
               <div className="relative z-10">
                 <span className="material-symbols-outlined text-[#3D4DA3] text-5xl mb-4 opacity-40">format_quote</span>
                 <p className="font-headline italic text-[#00105b] text-xl leading-relaxed">
-                  "Workshop giúp chúng tôi hiểu rõ hơn về cách giao tiếp và hòa nhập với người Điếc."
+                  "Workshop giúp em hiểu rõ hơn về cách giao tiếp và hòa nhập với người Điếc."
                 </p>
                 <div className="mt-8 flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white rounded-full overflow-hidden shadow-sm border border-slate-200 p-2 flex items-center justify-center">
-                    <span className="material-symbols-outlined text-slate-300">person</span>
+                  <div className="w-12 h-12 bg-white rounded-full overflow-hidden shadow-sm border border-slate-200">
+                    <img src="/images/vhat.jpg" alt="Vũ Hồng Anh Thư" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <p className="font-bold text-[15px] text-[#3D4DA3]">Bạn Vũ Hồng Anh Thư</p>
@@ -377,7 +355,7 @@ export default function Home() {
                 <img
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   alt="Thumbnail"
-                  src="/images/ws4.PNG"
+                  src="/images/news.png"
                 />
               </div>
 
@@ -426,7 +404,7 @@ export default function Home() {
               Cùng SignEdu xây dựng một Việt Nam hòa nhập
             </h2>
             <p className="text-lg md:text-2xl text-white/95 leading-relaxed max-w-3xl mx-auto drop-shadow-sm font-medium">
-              Hợp tác cùng chúng tôi để tạo ra những thay đổi thực chất và bền vững cho cộng đồng người Điếc.
+              Hợp tác cùng chúng tôi để tạo ra những thay đổi<br />thực chất và bền vững cho cộng đồng người Điếc.
             </p>
           </div>
 
