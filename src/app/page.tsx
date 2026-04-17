@@ -81,10 +81,10 @@ export default function Home() {
                 Về SignEdu
               </span>
               <h2 className="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-[#00105b] leading-[1.3] tracking-tight">
-                Chúng tôi kiến tạo một xã hội hòa nhập từ những điều nhỏ nhất
+                Chúng tôi kiến tạo<br />một xã hội hòa nhập<br />từ những điều nhỏ nhất
               </h2>
             </div>
-            <div className="space-y-6 text-slate-600 text-lg leading-relaxed font-sans">
+            <div className="space-y-6 text-slate-600 text-lg leading-relaxed font-sans text-justify">
               <p>
                 SignEdu lấp đầy khoảng trống hòa nhập cho người Điếc trong giáo dục và doanh nghiệp. Chúng tôi không chỉ hỗ trợ, mà cùng người Điếc đồng kiến tạo giải pháp. Tại đây, nhận thức được chuyển hóa thành năng lực vận hành thực tế và những thay đổi đo lường được.
               </p>
