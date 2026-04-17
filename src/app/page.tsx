@@ -340,7 +340,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-bold text-[15px] text-[#3D4DA3]">Bạn Vũ Hồng Anh Thư</p>
-                    <p className="text-xs text-on-surface-variant font-medium mt-0.5">Sinh viên Học viên Báo chí và Tuyên truyền</p>
+                    <p className="text-xs text-on-surface-variant font-medium mt-0.5">Sinh viên Học viện Báo chí và Tuyên truyền</p>
                   </div>
                 </div>
               </div>
